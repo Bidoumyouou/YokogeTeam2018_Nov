@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2763aed78642be945aca82defe8a2955, type: 3}
+  m_Name: P_Doudge
+  m_EditorClassIdentifier: 
+  Effect_obj: {fileID: 0}
+  obj: {fileID: 0}
+  Attack:
+  - {fileID: 1753745247931006, guid: 0c85daa3cd662f240bd9131c01fa8028, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  index: 7
+  player: {fileID: 0}
+  EndTime: 0.4
+  ChangeMode_Eq:
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 3d7890fe452f58c48b2db4a3b7266c49, type: 2}
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 883ea4a1f150ea94a9509bdca7842163, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
+    order: 0
+  equitionpack:
+  - {fileID: 11400000, guid: fe3de19bb4c3afe4e944407830baf9a5, type: 2}
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 3d7890fe452f58c48b2db4a3b7266c49, type: 2}
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 883ea4a1f150ea94a9509bdca7842163, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 9f5acb0a9422f2b449b7421b07377b7f, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 4049a6e4a8d344846b6cfffe3e8c96e7, type: 2}
+    CallBack: 2
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 7
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 1e65418624c91cc48be33418a990b5cd, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 7
+  flag:
+    IsAbleToJump: 1
+    IsAbleToMove: 0
+    IsAbleToBeDameged: 1
+    IsAbleToBeClashed: 1
+    IsAbleToVisible: 1
+    StartTime: 0
+    EndTime: 0.8
+    StartInputReceptionTime: 0
+    EndInputReceptionTime: Infinity
+  CallBack_Reciver: 2
+  targetkeylist:
+  - MyZ
+  - MyX
+  - MyC
+  - MyQ
+  - MyW
+  - MyE
+  - MyUp
+  - MyDown
+  - MyRight
+  - MyLeft
+  - MyHorizontal
+  - MyVertical
+  MP: 0
+  Muteki_Start: 0
+  Muteki_End: 0.35
+  MoveStart: 0
+  MoveSpeed: 15
+  Doudge_Length: 5

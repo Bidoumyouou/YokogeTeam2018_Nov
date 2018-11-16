@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6397dc1c8ac79754a8bc289055048b45, type: 3}
+  m_Name: EqPack_RunDougdeJump(fromAttack)
+  m_EditorClassIdentifier: 
+  GetChangeMode_Eq:
+  - eqition:
+    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 9f5acb0a9422f2b449b7421b07377b7f, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 4049a6e4a8d344846b6cfffe3e8c96e7, type: 2}
+    CallBack: 2
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 7
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 1e65418624c91cc48be33418a990b5cd, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 7

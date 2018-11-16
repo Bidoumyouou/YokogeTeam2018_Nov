@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c18ad3fdba9e4d4fa1044c476352f70, type: 3}
+  m_Name: E003_Move
+  m_EditorClassIdentifier: 
+  Effect_obj: {fileID: 0}
+  obj: {fileID: 0}
+  Attack:
+  - {fileID: 1877905793136128, guid: c979146fdc5a20243a435b8cfe01959b, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  index: 3
+  player: {fileID: 0}
+  EndTime: 2
+  ChangeMode_Eq:
+  - eqition:
+    - {fileID: 11400000, guid: 17070d99fc8eabc409642a3f778b2cab, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 5382257325160aa41803c8913c18fce3, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 9a0a32321da16664994f17b7199c3fe1, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 2ba90a0cbb01e8048ae4268cbb61cb05, type: 2}
+    order: 0
+  equitionpack: []
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 17070d99fc8eabc409642a3f778b2cab, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 5382257325160aa41803c8913c18fce3, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 9a0a32321da16664994f17b7199c3fe1, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 2ba90a0cbb01e8048ae4268cbb61cb05, type: 2}
+    order: 0
+  flag:
+    IsAbleToJump: 1
+    IsAbleToMove: 1
+    IsAbleToBeDameged: 1
+    IsAbleToBeClashed: 1
+    IsAbleToVisible: 1
+    StartTime: 0
+    EndTime: 100
+    StartInputReceptionTime: 0
+    EndInputReceptionTime: 0
+  CallBack_Reciver: -1
+  Strength: 0
+  AttackRange: 2
+  ReturnByWall: 1
+  dash_speed: 0.05

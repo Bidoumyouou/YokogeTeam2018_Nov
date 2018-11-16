@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a92a40916e61e243abfc8e1e52e2631, type: 3}
+  m_Name: P_Default
+  m_EditorClassIdentifier: 
+  Effect_obj: {fileID: 0}
+  obj: {fileID: 0}
+  Attack:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  index: 0
+  player: {fileID: 0}
+  EndTime: 0
+  ChangeMode_Eq:
+  - eqition:
+    - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 48b9dbde241be9b4db06d27095326a74, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 606549b9a7a71bb409836950bdafe27f, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 6
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 86a85b111adb49547867db2815e6e25c, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 2
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 6
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 26274c043ccb98849add959b77b7d4b6, type: 2}
+    CallBack: 2
+    CallForDebug: 1
+    TargetMode: {fileID: 11400000, guid: d9904ea6c87e2914f9b64a1c307770fc, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: c410d1a434ae1eb46943ce1cf59dc3b6, type: 2}
+    CallBack: 1
+    CallForDebug: 1
+    TargetMode: {fileID: 11400000, guid: d9904ea6c87e2914f9b64a1c307770fc, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: b2509118a79ca6846b518fd97328fefb, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 0
+    CallForDebug: 1
+    TargetMode: {fileID: 11400000, guid: d9904ea6c87e2914f9b64a1c307770fc, type: 2}
+    order: 6
+  equitionpack:
+  - {fileID: 11400000, guid: b0b3dc16bbc19ef428df9bfc459a4aed, type: 2}
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 2b1ea717396bed64689547c162ecfbb9, type: 2}
+    - {fileID: 11400000, guid: 274feceabc246244bb08e3e49d661260, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 539d14a75b6743442ab6a496865b7c4a, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: ccc228679ef298d4a8c69fdce6358e3c, type: 2}
+    - {fileID: 11400000, guid: 274feceabc246244bb08e3e49d661260, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 43691a8f6f671bb428ac7083319858f4, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 62b0e365414dcb94289541afe20e8fa4, type: 2}
+    - {fileID: 11400000, guid: 274feceabc246244bb08e3e49d661260, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: e5ee39e36721f0c42b1f086557f31b21, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 48b9dbde241be9b4db06d27095326a74, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 26274c043ccb98849add959b77b7d4b6, type: 2}
+    CallBack: 2
+    CallForDebug: 1
+    TargetMode: {fileID: 11400000, guid: d9904ea6c87e2914f9b64a1c307770fc, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: c410d1a434ae1eb46943ce1cf59dc3b6, type: 2}
+    CallBack: 1
+    CallForDebug: 1
+    TargetMode: {fileID: 11400000, guid: d9904ea6c87e2914f9b64a1c307770fc, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 606549b9a7a71bb409836950bdafe27f, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 6
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 86a85b111adb49547867db2815e6e25c, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 2
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 6
+  - eqition:
+    - {fileID: 11400000, guid: b2509118a79ca6846b518fd97328fefb, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 0
+    CallForDebug: 1
+    TargetMode: {fileID: 11400000, guid: d9904ea6c87e2914f9b64a1c307770fc, type: 2}
+    order: 6
+  flag:
+    IsAbleToJump: 1
+    IsAbleToMove: 1
+    IsAbleToBeDameged: 1
+    IsAbleToBeClashed: 1
+    IsAbleToVisible: 1
+    StartTime: 0
+    EndTime: Infinity
+    StartInputReceptionTime: 0
+    EndInputReceptionTime: Infinity
+  CallBack_Reciver: -1
+  targetkeylist:
+  - MyZ
+  - MyX
+  - MyC
+  - MyQ
+  - MyW
+  - MyE
+  - MyUp
+  - MyDown
+  - MyRight
+  - MyLeft
+  - MyHorizontal
+  - MyVertical
+  MP: 0
