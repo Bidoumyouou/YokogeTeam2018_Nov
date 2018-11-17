@@ -56,9 +56,12 @@ public class TestPlayer : Charactor {
 
     public float keysuccesstimer;//キー入力が成立してからの待ち時間
 
- 
+    public AudioSource testAuido;
+
     Rigidbody2D rb;
     void Start () {
+        testAuido = GetComponent<AudioSource>();
+
         tag = E_Tag.Player;
         ParentStart();
         P_status = GetComponent<PlayerStatus>();
@@ -150,7 +153,14 @@ public class TestPlayer : Charactor {
     }
     
     void Update () {
-
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            audioPlayer.PlayBGM(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            audioPlayer.PlayBGM(1);
+        }
 
         ParentUpdate();
         //Move();

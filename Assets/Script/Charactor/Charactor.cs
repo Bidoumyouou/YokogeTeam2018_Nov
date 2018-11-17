@@ -4,6 +4,9 @@ using System.Collections;
 public class Charactor : MonoBehaviour
 {
 
+    public AudioPlayer audioPlayer;
+    [Tooltip("Animationでこの変数を弄る")]public int audio_index = -1;
+
     public StageManager stage_manager;
     public bool IsRight = true;
     [HideInInspector] public E_Tag tag;
@@ -38,6 +41,7 @@ public class Charactor : MonoBehaviour
     [Tooltip("初めに遷移するモードをindexで")] public int FirstMode;//初めに遷移するモード
     protected void ParentStart()
     {
+        audioPlayer = GameObject.Find("AudioList").GetComponent<AudioPlayer>();
         gameobject_player = GameObject.Find("TestPlayer");
 
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -55,7 +59,20 @@ public class Charactor : MonoBehaviour
         modetime += Time.deltaTime;
         clash.Action(this.transform, this.caller);
         //RigidBotyからvelocityを記録
+        if (Mode.Audio_PlayTime.Count != 0)
+        {
+            foreach (AudioPlayTime t in Mode.Audio_PlayTime)
+            {
+                if (t.time <= modetime && !t.Played)
+                {
+                    audio_index = t.index;
+                    t.Played = true;
+                }
+            }
+        }
 
+
+        audio_index = audioPlayer.Update(audio_index);
     }
 
     private void LateUpdate()
