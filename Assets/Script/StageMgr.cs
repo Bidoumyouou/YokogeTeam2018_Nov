@@ -16,12 +16,17 @@ public class StageMgr : MonoBehaviour {
 	
 	
 	// Update is called once per frame
-	void Update () {
-        if(GameMgr.player.transform.position.y < OutLine_Y)
+	void Update() {
+        if (GameMgr.player != null)
         {
-            GameMgr.player.Fall(2);
-            //リスポーンポイントへの移動
-            GameMgr.player.transform.position = respawnPoint.transform.position;
+
+
+            if (GameMgr.player.transform.position.y < OutLine_Y)
+            {
+                GameMgr.player.Fall(2);
+                //リスポーンポイントへの移動
+                GameMgr.player.transform.position = respawnPoint.transform.position;
+            }
         }
 	}
 }

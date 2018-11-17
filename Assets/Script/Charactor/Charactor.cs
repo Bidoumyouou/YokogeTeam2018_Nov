@@ -57,20 +57,24 @@ public class Charactor : MonoBehaviour
     protected void ParentUpdate()
     {
         modetime += Time.deltaTime;
-        clash.Action(this.transform, this.caller);
+        if(clash != null)
+            clash.Action(this.transform, this.caller);
         //RigidBotyからvelocityを記録
-        if (Mode.Audio_PlayTime.Count != 0)
+
+        if (Mode != null)
         {
-            foreach (AudioPlayTime t in Mode.Audio_PlayTime)
+            if (Mode.Audio_PlayTime.Count != 0)
             {
-                if (t.time <= modetime && !t.Played)
+                foreach (AudioPlayTime t in Mode.Audio_PlayTime)
                 {
-                    audio_index = t.index;
-                    t.Played = true;
+                    if (t.time <= modetime && !t.Played)
+                    {
+                        audio_index = t.index;
+                        t.Played = true;
+                    }
                 }
             }
         }
-
 
         audio_index = audioPlayer.Update(audio_index);
     }

@@ -67,7 +67,8 @@ public class TestEnemy : Charactor
         
         //エネミーUIの作成
         StartCoroutine("SetEnemyUI");
-        EnemyUI = GameMgr.thisobject.EnemyUI;
+        if(GameMgr.thisobject != null)
+            EnemyUI = GameMgr.thisobject.EnemyUI;
         pre_mode_index = modeindex;
 
     }
@@ -100,19 +101,23 @@ public class TestEnemy : Charactor
             pre_mode_index = modeindex;
         }
         //対象のモードの当たり判定を破棄
-        Mode.DeleteHitBox(this);
-
-        //Mode = new P_ModeBase();
-        Mode = ModeList[_nextno];
         if (animator != null)
         {
             animator.SetInteger("Status", _nextno);
             animator.SetTrigger("ChangeMode");
         }
         modetime = 0.0f;
-        Mode.index = modeindex =_nextno;
-        Mode.Mode_Start(this);
 
+        if (Mode != null)
+        {
+            Mode.DeleteHitBox(this);
+
+            //Mode = new P_ModeBase();
+            Mode = ModeList[_nextno];
+            Mode.index = _nextno;
+            modeindex = _nextno;
+            Mode.Mode_Start(this);
+        }
 
     }
 
@@ -120,17 +125,20 @@ public class TestEnemy : Charactor
     protected void Update()
     {
         //ダメージ受けてたらマスク(赤)
-        if (Mode.index == 1)
+        if (Mode != null)
         {
-            renderer.color = Color.red;
-        }
-        else
-        {
-            if (renderer.color == Color.red)
-                renderer.color = Color.white;
 
-        }
+            if (Mode.index == 1)
+            {
+                renderer.color = Color.red;
+            }
+            else
+            {
+                if (renderer.color == Color.red)
+                    renderer.color = Color.white;
 
+            }
+        }
         //Modename = Mode.obj.name;
         IsRight = (transform.localScale.x > 0);
         ParentUpdate();
