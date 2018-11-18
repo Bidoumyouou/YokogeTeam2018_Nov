@@ -4,7 +4,7 @@ using System.Collections;
 public class P_Dameged : P_ModeBase
 {
     [Tooltip("やられ硬直時間")]public float StopTime;
-    // Use this for initialization
+
     public override void Mode_Start(Charactor _obj)
     {
         //アニメシグナルの呼び出し

@@ -156,6 +156,11 @@ Prefab:
       propertyPath: m_Name
       value: Gobrin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114683846070221938, guid: 77ce5a83ae9840a418aeed7ea85d411b,
+        type: 2}
+      propertyPath: status.HP
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
   m_IsPrefabAsset: 0
