@@ -192,6 +192,8 @@ public class TestPlayer : Charactor {
         transform.Translate(new Vector2(RunSpeed * MyCommonF.BoolToPorn(IsRight), 0));
 
 
+
+
         ParentUpdate();
         //Move();
         //モードの行動

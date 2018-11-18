@@ -16,4 +16,6 @@ public class E_ModeObject : MonoBehaviour
     {
 
     }
+
+
 }

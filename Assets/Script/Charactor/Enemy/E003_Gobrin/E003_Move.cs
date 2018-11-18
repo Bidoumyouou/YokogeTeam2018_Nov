@@ -57,4 +57,9 @@ public class E003_Move : E_ModeBase
     }
 
 
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
+
 }

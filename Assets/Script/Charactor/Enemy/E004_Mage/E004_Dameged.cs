@@ -24,4 +24,10 @@ public class E004_Dameged : E_ModeBase
         }
 
     }
+
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
 }

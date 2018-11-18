@@ -27,4 +27,10 @@ public class E001_Dead : E_ModeBase
         }
 
     }
+
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
 }

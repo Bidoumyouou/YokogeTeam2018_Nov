@@ -15,4 +15,12 @@ public class Boss_Walk : E_ModeBase
     {
 
     }
+
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
+
+
 }

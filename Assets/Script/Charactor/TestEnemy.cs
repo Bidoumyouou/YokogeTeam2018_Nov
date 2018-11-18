@@ -47,6 +47,13 @@ public class TestEnemy : Charactor
 
     }
 
+    public void MakeHitBox()
+    {
+        E_ModeBase e_mode = (E_ModeBase)Mode;
+
+        e_mode.MakeHitBox(this);
+    }
+
     //派生クラスのスタートから呼び出される
     public void StartEnemy()
     {

@@ -25,12 +25,7 @@ public class E003_Attack : E_ModeBase
         //一定時刻になったら当たり判定を作成
         if (!gob.IsAttacked && _obj.modetime > AttackTime)
         {
-            Vector3 v;
-            //オフセットと向きを考慮したposに当たり判定を生成
-            if (!_obj.IsRight) { v = new Vector3(attack_offset.x * -1, attack_offset.y, attack_offset.z); } else { v = attack_offset; }
-            _obj.hitbox[0] = GameObject.Instantiate(Attack[0], _obj.transform.position + v, Quaternion.identity) as GameObject;
-            _obj.hitbox[0].transform.parent = _obj.transform;
-            gob.IsAttacked = true;
+            //MakeHitBox(_obj);
         }
         //終了時刻になったら待機モードに
         if (_obj.modetime > EndTime)
@@ -43,6 +38,23 @@ public class E003_Attack : E_ModeBase
             //_obj.ChangeMode(3);
 
         }
+
+
     }
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+        Gobrin gob = _obj.GetComponent<Gobrin>();
+
+
+        Vector3 v;
+        //オフセットと向きを考慮したposに当たり判定を生成
+        if (!_obj.IsRight) { v = new Vector3(attack_offset.x * -1, attack_offset.y, attack_offset.z); } else { v = attack_offset; }
+        _obj.hitbox[0] = GameObject.Instantiate(Attack[0], _obj.transform.position + v, Quaternion.identity) as GameObject;
+        _obj.hitbox[0].transform.parent = _obj.transform;
+        gob.IsAttacked = true;
+
+    }
+
 
 }

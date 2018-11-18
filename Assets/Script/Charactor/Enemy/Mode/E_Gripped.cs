@@ -23,4 +23,9 @@ public class E_Gripped : E_ModeBase
         base.Mode_Update(_obj);
 
     }
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
 }

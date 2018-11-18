@@ -33,4 +33,10 @@ public class E005_Default : E_ModeBase
 
     }
 
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
+
 }   // Use this for initialization

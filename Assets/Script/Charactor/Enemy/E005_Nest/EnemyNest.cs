@@ -49,4 +49,8 @@ public class EnemyNest : TestEnemy
             GameObject.Destroy(CameraLockTrigger);
         }
     }
+
+
+
+
 }

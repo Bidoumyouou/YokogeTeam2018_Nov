@@ -30,4 +30,10 @@ public class E001_Attack : E_ModeBase
         }
 
     }
+
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
 }

@@ -23,4 +23,10 @@ public class E005_Wait : E_ModeBase
         }
     }
 
+
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
 }   // Use this for initialization

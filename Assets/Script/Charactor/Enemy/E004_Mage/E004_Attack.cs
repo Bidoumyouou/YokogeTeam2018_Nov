@@ -101,4 +101,10 @@ public class E004_Attack : E_ModeBase
         h.isRight = m.IsRight;
 
     }
+
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
 }

@@ -33,6 +33,11 @@ public class E_ModeBase : ModeBase
 
     }
     
- 
+    public virtual void MakeHitBox(Charactor _obj)
+    {
+
+    }
+
+
  
 }

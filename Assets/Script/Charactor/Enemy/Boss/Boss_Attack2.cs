@@ -15,4 +15,10 @@ public class Boss_Attack2 : E_ModeBase
     {
 
     }
+
+
+    public override void MakeHitBox(Charactor _obj)
+    {
+
+    }
 }
