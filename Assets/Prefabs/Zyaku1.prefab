@@ -210,8 +210,8 @@ MonoBehaviour:
   type: 0
   Strength: 1
   value: 10
-  power: 1
-  vector: {x: 0.1, y: 0}
+  power: 2
+  vector: {x: 1, y: 0}
   speed: 4
 --- !u!212 &212257916147288966
 SpriteRenderer:
