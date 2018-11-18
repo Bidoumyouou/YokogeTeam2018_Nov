@@ -972,7 +972,7 @@ MonoBehaviour:
   - MyVertical
   keysuccesstimer: 0
   testAuido: {fileID: 0}
-  MaxRunSpeed: 0.5
+  MaxRunSpeed: 0.25
   RunSpeed: 0
   RunDecaySpeed: 0.02
   velocity_sleshold: 0.8

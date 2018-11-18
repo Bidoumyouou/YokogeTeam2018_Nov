@@ -180,6 +180,18 @@ public class TestPlayer : Charactor {
             audioPlayer.PlayBGM(1);
         }
 
+        //実際に移動する関数
+        if (IsRight)
+        {
+            transform.localScale = new Vector3(BaseScale_x, transform.localScale.y,transform.localScale.z);
+        }
+        else
+        {
+            transform.localScale = new Vector3(-BaseScale_x, transform.localScale.y, transform.localScale.z);
+        }
+        transform.Translate(new Vector2(RunSpeed * MyCommonF.BoolToPorn(IsRight), 0));
+
+
         ParentUpdate();
         //Move();
         //モードの行動
