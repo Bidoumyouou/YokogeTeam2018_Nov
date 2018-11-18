@@ -29,7 +29,7 @@ public class P_Run : P_ModeBase
         //コールバックによってInputRecorderをハックする
         p = _obj.GetComponent<TestPlayer>();
 
-        p.RunSpeed = 0;
+        //p.RunSpeed = 0;
  
         //アニメシグナルの呼び出し
         player.ChangeAnimeSignal(PlayerMode.P_Run);

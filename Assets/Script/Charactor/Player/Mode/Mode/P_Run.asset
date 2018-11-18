@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2141c6c3b39bbc4289d2fe9aa36135d, type: 3}
   m_Name: P_Run
   m_EditorClassIdentifier: 
+  Audio_PlayTime: []
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -128,7 +129,7 @@ MonoBehaviour:
     EndTime: 100
     StartInputReceptionTime: 0
     EndInputReceptionTime: Infinity
-  CallBack_Reciver: 1
+  CallBack_Reciver: 2
   targetkeylist:
   - MyZ
   - MyX
@@ -143,3 +144,4 @@ MonoBehaviour:
   - MyHorizontal
   - MyVertical
   MP: 0
+  Accel: 0.05

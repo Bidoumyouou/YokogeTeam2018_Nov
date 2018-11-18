@@ -62,6 +62,8 @@ public class TestPlayer : Charactor {
 
     public float RunSpeed = 0;
 
+    public float RunDecaySpeed = 0.02f;
+
     Rigidbody2D rb;
     void Start () {
         testAuido = GetComponent<AudioSource>();
@@ -157,6 +159,18 @@ public class TestPlayer : Charactor {
     }
     
     void Update () {
+        //ランモード以外の時RunSpeedを徐々に落とす
+        if(Mode.index != 6)
+        {
+            if(RunSpeed > 0) {
+                RunSpeed -= RunDecaySpeed;
+                if(RunSpeed < 0)
+                {
+                    RunSpeed = 0;
+                }
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.T))
         {
             audioPlayer.PlayBGM(0);
