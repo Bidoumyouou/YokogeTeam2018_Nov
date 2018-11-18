@@ -58,6 +58,10 @@ public class TestPlayer : Charactor {
 
     public AudioSource testAuido;
 
+    public float MaxRunSpeed = 0.25f;
+
+    public float RunSpeed = 0;
+
     Rigidbody2D rb;
     void Start () {
         testAuido = GetComponent<AudioSource>();

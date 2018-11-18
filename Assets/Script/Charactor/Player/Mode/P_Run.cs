@@ -5,6 +5,8 @@ public class P_Run : P_ModeBase
 {
     TestPlayer p;
 
+    public float Accel = 0.02f;
+
     void HackRecorder(TestPlayer p)
     {
         if (CallBack_Reciver == 1)
@@ -27,7 +29,8 @@ public class P_Run : P_ModeBase
         //コールバックによってInputRecorderをハックする
         p = _obj.GetComponent<TestPlayer>();
 
-
+        p.RunSpeed = 0;
+ 
         //アニメシグナルの呼び出し
         player.ChangeAnimeSignal(PlayerMode.P_Run);
         base.Mode_Start(_obj);
@@ -42,6 +45,9 @@ public class P_Run : P_ModeBase
 
     public override void Mode_Update(Charactor _obj)
     {
+
+        //コールバックによってInputRecorderをハックする
+
         base.Mode_Update(_obj);
 
         //実際に移動する関数
@@ -53,12 +59,20 @@ public class P_Run : P_ModeBase
         {
             _obj.transform.localScale = new Vector3(-_obj.BaseScale_x, _obj.transform.localScale.y, _obj.transform.localScale.z);
         }
-        _obj.transform.Translate(new Vector2(player.P_status.walkspeed * MyCommonF.BoolToPorn(_obj.IsRight),0));
+        _obj.transform.Translate(new Vector2(player.RunSpeed * MyCommonF.BoolToPorn(_obj.IsRight),0));
 
 
         //最新のスタック以外は排除する
         p.recorder.DeleteOldAllowStack();
 
+        if(p.RunSpeed < p.MaxRunSpeed)
+        {
+            p.RunSpeed += Accel;
+            if(p.RunSpeed > p.MaxRunSpeed)
+            {
+                p.RunSpeed = p.MaxRunSpeed;
+            }
+        }
 
     }
 
