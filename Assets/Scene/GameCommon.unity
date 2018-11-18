@@ -576,7 +576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &244066855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,9 +972,9 @@ MonoBehaviour:
   - MyVertical
   keysuccesstimer: 0
   testAuido: {fileID: 0}
-  MaxRunSpeed: 0.2
+  MaxRunSpeed: 0.25
   RunSpeed: 0
-  RunDecaySpeed: 0.02
+  RunDecaySpeed: 0.015
   velocity_sleshold: 0.8
   ChangeAnimeFlag: 0
   ChangeAnimeState: 0
@@ -2089,6 +2089,7 @@ Transform:
   - {fileID: 1460752897}
   - {fileID: 673651269}
   - {fileID: 1648862101}
+  - {fileID: 1026934725}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2413,11 +2414,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1026934723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 2}
   m_Children: []
-  m_Father: {fileID: 1207098749}
-  m_RootOrder: 2
+  m_Father: {fileID: 955346382}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1066860548 stripped
 GameObject:
@@ -2466,7 +2467,6 @@ Transform:
   m_Children:
   - {fileID: 1424541964}
   - {fileID: 2003952440}
-  - {fileID: 1026934725}
   m_Father: {fileID: 1424621983}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
