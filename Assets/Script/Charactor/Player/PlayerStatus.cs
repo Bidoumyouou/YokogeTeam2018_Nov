@@ -9,8 +9,9 @@ public class PlayerStatus : MonoBehaviour {
     public float walkspeed;
     public float runspeed;
     public float jumpheight;//ジャンプする高さ
+    public float jumpStartheight;//ジャンプする高さ
 
-    
+
     // Use this for initialization
     void Start()
     {

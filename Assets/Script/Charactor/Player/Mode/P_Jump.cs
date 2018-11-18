@@ -10,9 +10,14 @@ public class P_Jump : P_ModeBase
 
     public int p = 0;
     // Use this for initialization
+    TestPlayer _p;
+
+    float Jump_Start_y;
+
     public override void Mode_Start(Charactor _obj)
     {
-        TestPlayer _p = _obj.GetComponent<TestPlayer>();
+        Jump_Start_y = _obj.transform.position.y;
+        _p = _obj.GetComponent<TestPlayer>();
 
         //アニメシグナルの呼び出し
         player.ChangeAnimeSignal(PlayerMode.P_Jump);
@@ -49,6 +54,9 @@ public class P_Jump : P_ModeBase
             isfall = true;
             _obj.animator.SetTrigger("JumpFall");
         }
-        
-     }
+
+       
+
+
+    }
 }
