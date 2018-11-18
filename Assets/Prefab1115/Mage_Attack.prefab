@@ -114,9 +114,9 @@ MonoBehaviour:
   type: 1
   Strength: 3
   value: 10
-  power: 2
-  vector: {x: 1, y: 0}
-  speed: 3
+  power: 3
+  vector: {x: 1, y: 0.2}
+  speed: 5
 --- !u!212 &212739731564628032
 SpriteRenderer:
   m_ObjectHideFlags: 1

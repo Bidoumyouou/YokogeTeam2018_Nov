@@ -823,7 +823,7 @@ MonoBehaviour:
   rigidbody2d: {fileID: 0}
   status:
     Alive: 1
-    HP: 5000
+    HP: 100
     MP: 50
     level: 0
   RayForHit: {x: 0, y: 0}
@@ -2369,7 +2369,7 @@ Transform:
   m_GameObject: {fileID: 1026934723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 2}
+  m_LocalScale: {x: 0.09, y: 0.09, z: 2}
   m_Children: []
   m_Father: {fileID: 955346382}
   m_RootOrder: 4
