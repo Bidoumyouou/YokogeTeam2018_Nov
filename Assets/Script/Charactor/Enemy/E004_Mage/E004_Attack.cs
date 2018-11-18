@@ -55,17 +55,7 @@ public class E004_Attack : E_ModeBase
 
         if (AttackTimer > AttackTime)
         {
-
-            AttackTimer = 0;
-
-            if (mage != null)
-            {
-                if (mage.mage_mode == Mage_Mode.NormalShot)
-                    NormalShot(mage);
-                if (mage.mage_mode == Mage_Mode.TargetShot)
-                    TrackShot(mage);
-            }
-            mage.IsAttacked = false;
+            //MakeHitBox(_obj);
         }
 
         //0.1fはアニメーションの切り替わり直後に条件が引っ掛からないための措置
@@ -105,6 +95,16 @@ public class E004_Attack : E_ModeBase
 
     public override void MakeHitBox(Charactor _obj)
     {
+        AttackTimer = 0;
+
+        if (mage != null)
+        {
+            if (mage.mage_mode == Mage_Mode.NormalShot)
+                NormalShot(mage);
+            if (mage.mage_mode == Mage_Mode.TargetShot)
+                TrackShot(mage);
+        }
+        mage.IsAttacked = false;
 
     }
 }

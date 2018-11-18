@@ -47,6 +47,7 @@ public class TestEnemy : Charactor
 
     }
 
+
     public void MakeHitBox()
     {
         E_ModeBase e_mode = (E_ModeBase)Mode;

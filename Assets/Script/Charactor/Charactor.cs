@@ -93,6 +93,27 @@ public class Charactor : MonoBehaviour
     
 
      */
+    
+    //キャラクターを発光させる
+    public void Illuminate(float _time)
+    {
+        StartCoroutine(IlluminateOneShot(_time));
+
+
+    }
+
+    IEnumerator IlluminateOneShot(float _time)
+    {
+        Color tmp_Color = renderer.color;
+
+        renderer.color = Color.green;
+
+        yield return new WaitForSeconds(_time);
+
+        renderer.color = Color.white;
+
+    }
+
     Collider2D tmp_col = new Collider2D();//1回当たったオブジェクトを一時的に感知
 
     void RecoverMP(int _n)
