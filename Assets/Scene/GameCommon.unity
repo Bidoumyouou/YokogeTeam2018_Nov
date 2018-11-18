@@ -854,7 +854,7 @@ MonoBehaviour:
     EndInputReceptionTime: 0
   Invisible: 0
   invisibletimer: 0
-  invisibletime: 2
+  invisibletime: 0.8
   renderer: {fileID: 0}
   Grip: {fileID: 0}
   FirstMode: 0

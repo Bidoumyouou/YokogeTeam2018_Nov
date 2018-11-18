@@ -14,7 +14,7 @@ MonoBehaviour:
   Audio_PlayTime:
   - time: 0.02
     index: 4
-    Played: 0
+    Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -28,7 +28,7 @@ MonoBehaviour:
   - {fileID: 0}
   index: 1
   player: {fileID: 0}
-  EndTime: 1
+  EndTime: 0.3
   ChangeMode_Eq:
   - eqition:
     - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}

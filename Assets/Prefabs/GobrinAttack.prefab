@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1508234f9d1d17a409401e9d1de56bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioIndex: -1
   status:
     DeleteToHit: 1
     DeleteToChangeMode: 1
@@ -115,7 +116,7 @@ MonoBehaviour:
   value: 10
   power: 6
   vector: {x: 1, y: 0.2}
-  speed: 2
+  speed: 6
 --- !u!212 &212128949922677624
 SpriteRenderer:
   m_ObjectHideFlags: 1

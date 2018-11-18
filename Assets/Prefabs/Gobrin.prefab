@@ -164,6 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 174755ad9d239054b96cb1d081bcfdb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 0}
+  audio_index: -1
   stage_manager: {fileID: 0}
   IsRight: 1
   tag: 0
@@ -210,7 +212,7 @@ MonoBehaviour:
   name: Gobrin
   ModeList:
   - {fileID: 11400000, guid: 1602355a9ff90724bba43cfcaa344ab3, type: 2}
-  - {fileID: 11400000, guid: 42ec7cf343e8a3446a2ab2a92263bd03, type: 2}
+  - {fileID: 11400000, guid: 016503de66055354dbfd4d0c0b96dc75, type: 2}
   - {fileID: 11400000, guid: 8c988ad701990f149872951b677586af, type: 2}
   - {fileID: 11400000, guid: bf6b2b843c6019241b80070d6ad9192c, type: 2}
   - {fileID: 11400000, guid: 5382257325160aa41803c8913c18fce3, type: 2}

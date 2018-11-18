@@ -28,22 +28,66 @@ MonoBehaviour:
   - {fileID: 0}
   index: 10
   player: {fileID: 0}
-  EndTime: 0.5
+  EndTime: 0.2
   ChangeMode_Eq:
   - eqition:
     - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
     CallBack: -1
     CallForDebug: 0
-    TargetMode: {fileID: 11400000, guid: 1602355a9ff90724bba43cfcaa344ab3, type: 2}
+    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
+    order: 9
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
     order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    - {fileID: 11400000, guid: 1e65418624c91cc48be33418a990b5cd, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    - {fileID: 11400000, guid: 4049a6e4a8d344846b6cfffe3e8c96e7, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 2
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 5
   equitionpack: []
   AllEqition:
   - eqition:
     - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
     CallBack: -1
     CallForDebug: 0
-    TargetMode: {fileID: 11400000, guid: 1602355a9ff90724bba43cfcaa344ab3, type: 2}
+    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
     order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    - {fileID: 11400000, guid: 1e65418624c91cc48be33418a990b5cd, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    - {fileID: 11400000, guid: 4049a6e4a8d344846b6cfffe3e8c96e7, type: 2}
+    - {fileID: 11400000, guid: 03c4d3a86479683459344b7202c3eb32, type: 2}
+    CallBack: 2
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
+    order: 9
   flag:
     IsAbleToJump: 0
     IsAbleToMove: 0

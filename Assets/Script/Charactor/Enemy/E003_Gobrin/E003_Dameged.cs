@@ -30,7 +30,7 @@ public class E003_Dameged : E_ModeBase
         }
         if (_obj.clash.Trigger)
         {
-            _obj.modetime = 0.0f;//どういつモード中に当たったら硬直時間をリセット
+            //_obj.modetime = 0.0f;//どういつモード中に当たったら硬直時間をリセット
         }
 
     }
