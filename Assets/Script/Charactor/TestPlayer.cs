@@ -58,7 +58,7 @@ public class TestPlayer : Charactor {
 
     public AudioSource testAuido;
 
-    public float MaxRunSpeed = 0.25f;
+    public float MaxRunSpeed;
 
     public float RunSpeed = 0;
 
@@ -169,6 +169,18 @@ public class TestPlayer : Charactor {
                     RunSpeed = 0;
                 }
             }
+
+            //実際に移動する関数
+            if (IsRight)
+            {
+                transform.localScale = new Vector3(BaseScale_x, transform.localScale.y, transform.localScale.z);
+            }
+            else
+            {
+                transform.localScale = new Vector3(-BaseScale_x, transform.localScale.y, transform.localScale.z);
+            }
+            transform.Translate(new Vector2(RunSpeed * MyCommonF.BoolToPorn(IsRight), 0));
+
         }
 
         if (Input.GetKeyDown(KeyCode.T))
@@ -180,16 +192,6 @@ public class TestPlayer : Charactor {
             audioPlayer.PlayBGM(1);
         }
 
-        //実際に移動する関数
-        if (IsRight)
-        {
-            transform.localScale = new Vector3(BaseScale_x, transform.localScale.y,transform.localScale.z);
-        }
-        else
-        {
-            transform.localScale = new Vector3(-BaseScale_x, transform.localScale.y, transform.localScale.z);
-        }
-        transform.Translate(new Vector2(RunSpeed * MyCommonF.BoolToPorn(IsRight), 0));
 
 
 
