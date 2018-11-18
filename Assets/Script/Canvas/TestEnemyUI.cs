@@ -10,12 +10,18 @@ public class TestEnemyUI : MonoBehaviour
     RectTransform myRectTfm;
     public Vector3 pos_offset;
 
+    int startHP;
+
+    Slider sl;
+
     //α値変更用のやつ
     Image[] sprite;
 
     private Text targetText;
     void Start()
     {
+        sl = GetComponentInChildren<Slider>();
+
         sprite = GetComponentsInChildren<Image>();
         foreach (Image s in sprite)
         {
@@ -25,6 +31,7 @@ public class TestEnemyUI : MonoBehaviour
         {
             targetTfm = TargetObject.transform;
             chara_cmp = TargetObject.GetComponent<Charactor>();
+            startHP = chara_cmp.status.HP;
         }
         myRectTfm = GetComponent<RectTransform>();
         //targetText = GetComponent<Text>();
@@ -56,5 +63,9 @@ public class TestEnemyUI : MonoBehaviour
 
 
         //関連付けされてるオブジェクトが消えたら自身も消滅する
+
+        //スライダーの更新
+
+        sl.value = (float)chara_cmp.status.HP / (float)startHP;
     }
 }
