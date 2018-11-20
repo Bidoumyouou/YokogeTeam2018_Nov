@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 2a1a84bfb9c716c479aecc42381fed8d
+labels:
+- Boss_Counter
+- Data
+- ScriptableObject
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

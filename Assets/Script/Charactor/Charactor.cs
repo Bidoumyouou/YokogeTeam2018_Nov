@@ -103,8 +103,10 @@ public class Charactor : MonoBehaviour
     
 
      */
-    
+
     //キャラクターを発光させる
+    public bool isIllminate = false;
+
     public void Illuminate(float _time)
     {
         StartCoroutine(IlluminateOneShot(_time));
@@ -114,14 +116,15 @@ public class Charactor : MonoBehaviour
 
     IEnumerator IlluminateOneShot(float _time)
     {
+        isIllminate = true;
         Color tmp_Color = renderer.color;
 
         renderer.color = Color.green;
 
         yield return new WaitForSeconds(_time);
 
-        renderer.color = Color.white;
-
+        renderer.color = tmp_Color;
+        isIllminate = false;
     }
 
     Collider2D tmp_col = new Collider2D();//1回当たったオブジェクトを一時的に感知
