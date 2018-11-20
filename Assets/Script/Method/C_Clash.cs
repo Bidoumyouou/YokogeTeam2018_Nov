@@ -35,6 +35,15 @@ public class C_Clash
         time = 0.0f;
     }
     //Updateに入れて常にClashをもつオブジェクトの吹っ飛びを管理
+    public void ActionBuilding()
+    {
+        time += Time.deltaTime;
+        if (time > 0.1f)
+        {
+            Active = false;
+        }
+    }
+
     public bool Action(Transform _transform, ObjectCaller _caller)
     {
         if (time > 0.05f) { Trigger = false; }

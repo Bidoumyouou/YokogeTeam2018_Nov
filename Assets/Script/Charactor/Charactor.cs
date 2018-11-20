@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Charactor : MonoBehaviour
 {
+    public bool IsBuilding = false;//自分が建物か生物か
+
 
     public AudioPlayer audioPlayer;
     [Tooltip("Animationでこの変数を弄る")]public int audio_index = -1;
@@ -57,8 +59,16 @@ public class Charactor : MonoBehaviour
     protected void ParentUpdate()
     {
         modetime += Time.deltaTime;
-        if(clash != null)
-            clash.Action(this.transform, this.caller);
+        if (clash != null)
+            if (!IsBuilding)
+            {
+                clash.Action(this.transform, this.caller);
+            }
+            else
+            {
+                //自動でクラッシュだけオフにする
+                clash.ActionBuilding();
+            }
         //RigidBotyからvelocityを記録
 
         if (Mode != null)
@@ -161,6 +171,7 @@ public class Charactor : MonoBehaviour
         
 
             if (!isHitBoxRight) { AdjustedDamegeVector.x *= -1; }
+
             //無敵状態でなければ
             if (nowflag.IsAbleToBeClashed && !Invisible && !hitbox.IsHit)
             {

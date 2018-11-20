@@ -15,11 +15,15 @@ public class E005_Wait : E_ModeBase
         //CameraLockFilterがついていればプレイヤーの接近を
         //感知して動く
         EnemyNest nest = _obj.GetComponent<EnemyNest>();
-        CameraLockTrigger camera = nest.CameraLockTrigger.GetComponent<CameraLockTrigger>();
-        if (camera.valid)
+        CameraLockTrigger camera;
+        if (nest.CameraLockTrigger != null)
         {
-            //デフォルトへ
-            _obj.ChangeMode(0);
+            camera = nest.CameraLockTrigger.GetComponent<CameraLockTrigger>();
+            if (camera.valid)
+            {
+                //デフォルトへ
+                _obj.ChangeMode(0);
+            }
         }
     }
 
