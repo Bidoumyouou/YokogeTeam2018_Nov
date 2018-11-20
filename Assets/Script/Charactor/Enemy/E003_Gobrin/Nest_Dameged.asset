@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8eb657f4d0710c4eb141dca3aa52bf1, type: 3}
   m_Name: Nest_Dameged
   m_EditorClassIdentifier: 
+  Audio_PlayTime: []
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -22,12 +23,24 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  index: 0
+  index: 1
   player: {fileID: 0}
   EndTime: 0.1
-  ChangeMode_Eq: []
+  ChangeMode_Eq:
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: 0
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 5828899e337fedd4eb1ac86541751db8, type: 2}
+    order: 0
   equitionpack: []
-  AllEqition: []
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: 0
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 5828899e337fedd4eb1ac86541751db8, type: 2}
+    order: 0
   flag:
     IsAbleToJump: 1
     IsAbleToMove: 1
@@ -39,6 +52,7 @@ MonoBehaviour:
     StartInputReceptionTime: 0.05
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
+  Strength: 0
   AttackRange: 0
   ChangeToPre_index: 1
   StopTime: 0

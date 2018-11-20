@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88c94c926e98b84cbe0e16f176bda49, type: 3}
   m_Name: E005_Wait
   m_EditorClassIdentifier: 
+  Audio_PlayTime: []
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -22,12 +23,24 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  index: 0
+  index: 4
   player: {fileID: 0}
   EndTime: 0
-  ChangeMode_Eq: []
+  ChangeMode_Eq:
+  - eqition:
+    - {fileID: 11400000, guid: 17070d99fc8eabc409642a3f778b2cab, type: 2}
+    CallBack: 0
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: a7d8928102223464f8e09142c874228e, type: 2}
+    order: 0
   equitionpack: []
-  AllEqition: []
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 17070d99fc8eabc409642a3f778b2cab, type: 2}
+    CallBack: 0
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: a7d8928102223464f8e09142c874228e, type: 2}
+    order: 0
   flag:
     IsAbleToJump: 1
     IsAbleToMove: 1
@@ -39,4 +52,5 @@ MonoBehaviour:
     StartInputReceptionTime: 0.05
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
-  AttackRange: 0
+  Strength: 0
+  AttackRange: 10

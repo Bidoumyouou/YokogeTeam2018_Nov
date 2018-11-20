@@ -12,6 +12,7 @@ public class E005_Wait : E_ModeBase
 
     public override void Mode_Update(Charactor _obj)
     {
+        base.Mode_Update(_obj);
         //CameraLockFilterがついていればプレイヤーの接近を
         //感知して動く
         EnemyNest nest = _obj.GetComponent<EnemyNest>();

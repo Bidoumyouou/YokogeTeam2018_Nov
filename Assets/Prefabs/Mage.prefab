@@ -135,13 +135,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb399ff921afe45a17fd98db44972d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBuilding: 0
+  audioPlayer: {fileID: 0}
+  audio_index: -1
   stage_manager: {fileID: 0}
   IsRight: 1
   tag: 0
   rigidbody2d: {fileID: 0}
   status:
     Alive: 1
-    HP: 50
+    HP: 100
     MP: 0
     level: 0
   RayForHit: {x: 0, y: 0}

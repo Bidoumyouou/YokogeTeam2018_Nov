@@ -85,12 +85,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1508234f9d1d17a409401e9d1de56bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioIndex: -1
   status:
     DeleteToHit: 0
     DeleteToChangeMode: 1
     EndTime: 100
+  isGrip: 0
+  MPRecover: 0
   IsHit: 0
   hit_col: {fileID: 0}
+  chara: {fileID: 0}
   isRight: 0
   chara_caller: {fileID: 0}
   speed: 0
@@ -108,7 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Effect: {fileID: 1924171010822628, guid: e8f87c50ef8ce3547b9d523a295e1849, type: 2}
   type: 0
-  value: 2
+  Strength: 1
+  value: 20
   power: 0.3
   vector: {x: 0, y: 8}
   speed: 4

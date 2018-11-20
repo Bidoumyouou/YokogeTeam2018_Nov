@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114689408285806054}
   - component: {fileID: 212075896749573156}
   - component: {fileID: 114388465787327232}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: GobrinNest
   m_TagString: Enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1134711191858426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.384, y: -18.586, z: 0}
+  m_LocalPosition: {x: 25.393799, y: -19.057373, z: 0}
   m_LocalScale: {x: 3.8038917, y: 3.8038917, z: 1.5215566}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -100,13 +100,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e1b2bb73a767d3499efd368d4eca6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBuilding: 1
+  audioPlayer: {fileID: 0}
+  audio_index: -1
   stage_manager: {fileID: 0}
   IsRight: 1
   tag: 0
   rigidbody2d: {fileID: 0}
   status:
     Alive: 1
-    HP: 10
+    HP: 100
     MP: 0
     level: 0
   RayForHit: {x: 0, y: 0}
@@ -146,7 +149,7 @@ MonoBehaviour:
   name: Gobrin's Nest
   ModeList:
   - {fileID: 11400000, guid: a7d8928102223464f8e09142c874228e, type: 2}
-  - {fileID: 11400000, guid: 42ec7cf343e8a3446a2ab2a92263bd03, type: 2}
+  - {fileID: 11400000, guid: 53c08e1f5a9761a4cbb0d3ff8bf21a28, type: 2}
   - {fileID: 11400000, guid: 8c988ad701990f149872951b677586af, type: 2}
   - {fileID: 11400000, guid: a7d8928102223464f8e09142c874228e, type: 2}
   - {fileID: 11400000, guid: a748884ac91e5ed4596ebb151bca1e06, type: 2}
@@ -210,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c2efd48f02c3f4dda825950570186fcf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69cbc902ca537054389e1bdaf814a8c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
