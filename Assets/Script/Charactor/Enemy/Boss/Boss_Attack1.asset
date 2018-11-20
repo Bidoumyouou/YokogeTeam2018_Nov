@@ -15,6 +15,7 @@ MonoBehaviour:
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
+  - {fileID: 1533686588918636, guid: 6be913b4a7afa3245b02fb568cdc0160, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -22,13 +23,26 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  index: 3
+  index: 6
   player: {fileID: 0}
-  EndTime: 0
-  ChangeMode_Eq: []
+  EndTime: 1
+  ChangeMode_Eq:
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: ef168aa0ea61af54da67233447799c8a, type: 2}
+    order: 0
   equitionpack: []
-  AllEqition: []
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: ef168aa0ea61af54da67233447799c8a, type: 2}
+    order: 0
   flag:
     IsAbleToJump: 1
     IsAbleToMove: 1
@@ -42,3 +56,5 @@ MonoBehaviour:
   CallBack_Reciver: -1
   Strength: 0
   AttackRange: 0
+  p: 0
+  attack_offset: {x: 1, y: 0, z: 0}

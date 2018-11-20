@@ -2610,7 +2610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scenename: Stage8
-  OutLine_Y: -22
+  OutLine_Y: -30
   respawnPoint: {fileID: 0}
 --- !u!4 &707417416
 Transform:
@@ -2972,7 +2972,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4203317228813318, guid: 12835cb8f38d03f448eb1561a3df69df, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 30.227829
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4203317228813318, guid: 12835cb8f38d03f448eb1561a3df69df, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3017,8 +3017,24 @@ Prefab:
         type: 2}
       propertyPath: ModeList.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: cb638c7256d3b9843854452099dbeb54,
+      objectReference: {fileID: 11400000, guid: 65398694245206741b88f56b0c369741,
         type: 2}
+    - target: {fileID: 114600923517630486, guid: 12835cb8f38d03f448eb1561a3df69df,
+        type: 2}
+      propertyPath: FirstMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114600923517630486, guid: 12835cb8f38d03f448eb1561a3df69df,
+        type: 2}
+      propertyPath: ModeList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: ef168aa0ea61af54da67233447799c8a,
+        type: 2}
+    - target: {fileID: 212824273607316568, guid: 12835cb8f38d03f448eb1561a3df69df,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12835cb8f38d03f448eb1561a3df69df, type: 2}
   m_IsPrefabAsset: 0

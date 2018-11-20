@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Boss_Default : E_ModeBase
 {
+    public int p = ~0;
     new GameObject player;
     Boss _enemy;
     public override void Mode_Start(Charactor _obj)
@@ -12,6 +13,7 @@ public class Boss_Default : E_ModeBase
 
         player = GameObject.Find("TestPlayer");
         base.Mode_Start(_obj);
+
     }
 
     public override void Mode_Update(Charactor _obj)

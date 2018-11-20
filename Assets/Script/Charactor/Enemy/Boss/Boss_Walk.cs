@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Boss_Walk : E_ModeBase
 {
-
+    public int o = 0;
     public bool ReturnByWall = true;
 
     public float dash_speed;

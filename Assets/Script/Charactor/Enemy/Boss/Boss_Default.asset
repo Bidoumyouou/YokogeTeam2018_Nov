@@ -34,13 +34,27 @@ MonoBehaviour:
     TargetMode: {fileID: 11400000, guid: d42e0d98bbb66d343b1e9db8173144e5, type: 2}
     order: 0
   - eqition:
+    - {fileID: 11400000, guid: 13b1d61b019719a4b846f85990fdca06, type: 2}
     - {fileID: 11400000, guid: 17070d99fc8eabc409642a3f778b2cab, type: 2}
     CallBack: 0
     CallForDebug: 0
     TargetMode: {fileID: 11400000, guid: 65398694245206741b88f56b0c369741, type: 2}
     order: 0
   equitionpack: []
-  AllEqition: []
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: 0
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: d42e0d98bbb66d343b1e9db8173144e5, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 13b1d61b019719a4b846f85990fdca06, type: 2}
+    - {fileID: 11400000, guid: 17070d99fc8eabc409642a3f778b2cab, type: 2}
+    CallBack: 0
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 65398694245206741b88f56b0c369741, type: 2}
+    order: 0
   flag:
     IsAbleToJump: 1
     IsAbleToMove: 1
@@ -53,4 +67,5 @@ MonoBehaviour:
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
   Strength: 0
-  AttackRange: 3
+  AttackRange: 4
+  p: -1
