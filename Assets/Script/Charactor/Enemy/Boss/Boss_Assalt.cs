@@ -15,7 +15,7 @@ public class Boss_Assalt : E_ModeBase
         player = GameObject.Find("TestPlayer");
         base.Mode_Start(_obj);
 
-        MakeHitBox(_obj);
+        //MakeHitBox(_obj);
         //前方に突っ込む
         Rigidbody2D rb = _obj.GetComponent<Rigidbody2D>();
 
@@ -49,7 +49,7 @@ public class Boss_Assalt : E_ModeBase
     {
         _obj.hitbox[0] = GameObject.Instantiate(Attack[0], _obj.transform.position, Quaternion.identity) as GameObject;
         _obj.hitbox[0].transform.parent = _obj.transform;
-
+        _obj.hitbox[0].transform.localPosition = new Vector3(0,0,0);
 
 
     }

@@ -141,7 +141,7 @@ MonoBehaviour:
   type: 0
   Strength: 1
   value: 20
-  power: 6
+  power: 3
   vector: {x: 1, y: 0.3}
   speed: 6
 --- !u!212 &212762624700695364
