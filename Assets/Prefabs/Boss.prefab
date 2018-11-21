@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1625671347263848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.06, y: -20.577665, z: 0}
+  m_LocalPosition: {x: 29.692986, y: -19.278574, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -221,10 +221,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2a1a84bfb9c716c479aecc42381fed8d, type: 2}
   - {fileID: 11400000, guid: 65398694245206741b88f56b0c369741, type: 2}
   - {fileID: 11400000, guid: 09e5cce89350800418591f259ca66a45, type: 2}
+  - {fileID: 11400000, guid: 511efd7c1fba8bb478aaeb3a5c4095d4, type: 2}
   Modename: 
   EnemyUI: {fileID: 0}
   illuminatetime: 0
-  DarkArm: {fileID: 0}
+  NullMagicCircle: {fileID: 1483977115630772, guid: fed86e464d4a951428ee6d6d2f484c72,
+    type: 2}
+  DarkArm: {fileID: 1783651075064506, guid: ee50efb15e839734dabcd40a86b46426, type: 2}
+  CameraPrefab: {fileID: 0}
 --- !u!212 &212824273607316568
 SpriteRenderer:
   m_ObjectHideFlags: 1
