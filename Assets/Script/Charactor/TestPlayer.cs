@@ -286,4 +286,21 @@ public class TestPlayer : Charactor {
         ChangeAnimeFlag = true;
         ChangeAnimeState = (int)_state;
     }
+
+    public void AddForceFront(float _n)
+    {
+        Vector2 vec;
+        if (IsRight)
+        {
+            //→
+            vec = new Vector2(_n, 0);
+        }
+        else
+        {
+            vec = new Vector2(-_n, 0);
+        }
+        //吹っ飛ばす
+        rb.AddForce(vec);
+
+    }
 }
