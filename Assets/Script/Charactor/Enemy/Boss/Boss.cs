@@ -5,6 +5,8 @@ public class Boss : TestEnemy
 {
     public float illuminatetime;
 
+    public GameObject DarkArm;
+
     // Use this for initialization
     void Start()
     {
@@ -32,4 +34,18 @@ public class Boss : TestEnemy
         }
 
     }
+
+    public void Dissable()
+    {
+        renderer.color = Color.clear;
+    }
+
+    public void MakeDarkHand()
+    {
+        GameObject g = Instantiate(DarkArm);
+        g.transform.position = transform.position;
+        g.transform.Translate(new Vector3(Random.Range(-10f, 10f), 0, 0));
+
+    }
+
 }
