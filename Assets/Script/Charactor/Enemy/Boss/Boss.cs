@@ -45,7 +45,7 @@ public class Boss : TestEnemy
         GameObject g = Instantiate(DarkArm);
         g.transform.position = transform.position;
         g.transform.Translate(new Vector3(Random.Range(-10f, 10f), 0, 0));
-
+        
     }
 
 }
