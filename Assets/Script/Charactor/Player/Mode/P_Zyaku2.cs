@@ -29,14 +29,14 @@ public class P_Zyaku2 : P_ModeBase
         ////////////////////////
         //以上、全アクション共通
         ////////////////////////
-        Global.MyMove2D m = Global.MyMove2D.Move(_obj.transform, tmp_pos, tmp_targetpos, Move_Speed);
+        //Global.MyMove2D m = Global.MyMove2D.Move(_obj.transform, tmp_pos, tmp_targetpos, Move_Speed);
 
         TestPlayer _p = _obj.GetComponent<TestPlayer>();
         //少し前に出る
         if (_p.Move_Dest > 0)
         {
             _p.Move_Dest -= _p.Move_Speed;
-            _obj.transform.Translate(_p.Move_Vec_Norm * _p.Move_Speed );
+            //_obj.transform.Translate(_p.Move_Vec_Norm * _p.Move_Speed );
 
         }
     
