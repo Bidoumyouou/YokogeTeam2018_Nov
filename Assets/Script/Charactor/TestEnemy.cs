@@ -131,6 +131,8 @@ public class TestEnemy : Charactor
 
     }
 
+    Color tmpc;
+
     // Update is called once per frame
     protected void Update()
     {
@@ -140,12 +142,13 @@ public class TestEnemy : Charactor
 
             if (Mode.index == 1)
             {
+                tmpc = renderer.color;
                 renderer.color = Color.red;
             }
             else
             {
                 if (renderer.color == Color.red)
-                    renderer.color = Color.white;
+                    renderer.color = First_Color;
 
             }
         }

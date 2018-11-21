@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bf63ecd12f9564ebd3346089d6e9dd, type: 3}
   m_Name: Boss_Attack1
   m_EditorClassIdentifier: 
-  ModeChange_Random: 33
+  ModeChange_Random: 30
   Audio_PlayTime: []
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
@@ -26,7 +26,7 @@ MonoBehaviour:
   - {fileID: 0}
   index: 7
   player: {fileID: 0}
-  EndTime: 2
+  EndTime: 2.5
   ChangeMode_Eq:
   - eqition:
     - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}

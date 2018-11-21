@@ -42,8 +42,11 @@ public class Charactor : MonoBehaviour
     [HideInInspector]public HitBox Grip;//掴まれている対象のtransform;
 
     [Tooltip("初めに遷移するモードをindexで")] public int FirstMode;//初めに遷移するモード
+
+    public Color First_Color;
     protected void ParentStart()
     {
+
         audioPlayer = GameObject.Find("AudioList").GetComponent<AudioPlayer>();
         gameobject_player = GameObject.Find("TestPlayer");
 
@@ -52,6 +55,7 @@ public class Charactor : MonoBehaviour
         clash.Init(GetComponent<BoxCollider2D>());//これだと現状キャラクターの当たり判定はBoxColliderしか使えない
         caller = GetComponent<ObjectCaller>();
         renderer = GetComponent<SpriteRenderer>();
+        First_Color = renderer.color;
     }
 
 
@@ -124,7 +128,7 @@ public class Charactor : MonoBehaviour
 
         yield return new WaitForSeconds(_time);
 
-        renderer.color = tmp_Color;
+        renderer.color = First_Color;
         isIllminate = false;
     }
 
@@ -206,7 +210,8 @@ public class Charactor : MonoBehaviour
                         //ボスならば反撃する
                         if (IsBoss)
                         {
-                            if (modetime > 1.0)
+                            Boss b = (Boss)this;
+                            if (modetime > 1.0 && b.IsCounter)
                             {
                                 ChangeMode(7);
                             }
