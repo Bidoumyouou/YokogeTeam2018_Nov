@@ -11,12 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d28091ddc651bf24fa6a2ea8c07906d3, type: 3}
   m_Name: Boss_Assalt
   m_EditorClassIdentifier: 
-  ModeChange_Random: 0
+  ModeChange_Random: 79
   Audio_PlayTime: []
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
-  - {fileID: 1848176058834332, guid: b18d0cdf13f00b945a1d4c8737b8af76, type: 2}
+  - {fileID: 1676856642418214, guid: 52149288ec608ab4c92587b57d71ce5d, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -35,7 +35,13 @@ MonoBehaviour:
     TargetMode: {fileID: 11400000, guid: ef168aa0ea61af54da67233447799c8a, type: 2}
     order: 0
   equitionpack: []
-  AllEqition: []
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: 0
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: ef168aa0ea61af54da67233447799c8a, type: 2}
+    order: 0
   flag:
     IsAbleToJump: 1
     IsAbleToMove: 1
