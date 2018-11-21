@@ -261,7 +261,7 @@ public class TestPlayer : Charactor {
         }
 
         //瀕死アニメ用の体力管理
-        animator.SetBool("Deadly", (status.HP <= 2));
+        animator.SetBool("Deadly", (status.HP <= 10));
     }
 
     public void Fall(int _damegevalue)

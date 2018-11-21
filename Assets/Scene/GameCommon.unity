@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageMgr_Obj: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 413212242}
   DoorMoveflag: 0
   TargetDoorNo: 0
 --- !u!1001 &522159966

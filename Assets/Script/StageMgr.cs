@@ -6,12 +6,14 @@ public class StageMgr : MonoBehaviour {
     public string Scenename;//シーンの名前を取得する
     [Tooltip("落下したらアウトになるライン")]public float OutLine_Y;
     //GameObject Respawn_obj;
-    [HideInInspector]public RespawnPoint respawnPoint;
+    public RespawnPoint respawnPoint;
 
     void Start()
     {
-        
-        respawnPoint = GameObject.Find("RespawnPoint").GetComponent<RespawnPoint>();
+        if (respawnPoint == null)
+        {
+            respawnPoint = GameObject.Find("RespawnPoint").GetComponent<RespawnPoint>();
+        }
     }
 	
 	
