@@ -5,6 +5,7 @@ public class Charactor : MonoBehaviour
 {
     public bool IsBuilding = false;//自分が建物か生物か
 
+ 
 
     public AudioPlayer audioPlayer;
     [Tooltip("Animationでこの変数を弄る")]public int audio_index = -1;

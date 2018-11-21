@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1625671347263848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.227829, y: -20.577665, z: 0}
+  m_LocalPosition: {x: 23.06, y: -20.577665, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,7 +131,7 @@ Animator:
   m_GameObject: {fileID: 1625671347263848}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6cefed805baebb9489368a9a24afd584, type: 2}
+  m_Controller: {fileID: 9100000, guid: e58f10ee4216a7449a27ac5539363cba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -207,21 +207,24 @@ MonoBehaviour:
   invisibletime: 3.5
   renderer: {fileID: 0}
   Grip: {fileID: 0}
-  FirstMode: 6
+  FirstMode: 3
   tmp_velocity: 0
+  isIllminate: 0
   MP: 3
   name: Boss
   ModeList:
-  - {fileID: 11400000, guid: 1602355a9ff90724bba43cfcaa344ab3, type: 2}
+  - {fileID: 11400000, guid: ef168aa0ea61af54da67233447799c8a, type: 2}
   - {fileID: 11400000, guid: 016503de66055354dbfd4d0c0b96dc75, type: 2}
   - {fileID: 11400000, guid: 8c988ad701990f149872951b677586af, type: 2}
-  - {fileID: 11400000, guid: 65398694245206741b88f56b0c369741, type: 2}
+  - {fileID: 11400000, guid: d42e0d98bbb66d343b1e9db8173144e5, type: 2}
   - {fileID: 11400000, guid: 6bd3af1f5e7b7ae46ab1624f4fcf99ad, type: 2}
   - {fileID: 11400000, guid: 2a1a84bfb9c716c479aecc42381fed8d, type: 2}
-  - {fileID: 11400000, guid: d42e0d98bbb66d343b1e9db8173144e5, type: 2}
+  - {fileID: 11400000, guid: 65398694245206741b88f56b0c369741, type: 2}
   - {fileID: 11400000, guid: 09e5cce89350800418591f259ca66a45, type: 2}
   Modename: 
   EnemyUI: {fileID: 0}
+  illuminatetime: 0
+  DarkArm: {fileID: 0}
 --- !u!212 &212824273607316568
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -259,7 +262,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9b833e23ecd116540b6dbd82e015a263, type: 3}
   m_Color: {r: 0.21987364, g: 0.22531098, b: 0.5754717, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.68, y: 1.01}
