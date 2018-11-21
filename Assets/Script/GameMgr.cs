@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 //10/25 シーンのロード管理の機能も付与
 public class GameMgr : MonoBehaviour {
 
+    public GameObject GameOver_Prefab;
+    public GameObject GameClear_Prefab;
+
     public static GameMgr thisobject;
 
     public static string NowSceneName;
@@ -69,8 +72,16 @@ public class GameMgr : MonoBehaviour {
 
     }
 
+    public void MakeGameOverUI()
+    {
+        GameObject g = Instantiate(GameOver_Prefab);
+        g.transform.parent = Canvas_Ref.transform;
+        g.transform.localPosition = new Vector3(0, 0, 0);
+
+    }
+
     //ゲームオーバー
-    public static void GameOver()
+    public  void GameOver()
     {
         ChangeScene("Stage0");
         player.status.Init();

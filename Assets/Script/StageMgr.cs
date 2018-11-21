@@ -25,7 +25,7 @@ public class StageMgr : MonoBehaviour {
 
             if (GameMgr.player.transform.position.y < OutLine_Y)
             {
-                GameMgr.player.Fall(2);
+                GameMgr.player.Fall(10);
                 //リスポーンポイントへの移動
                 GameMgr.player.transform.position = respawnPoint.transform.position;
             }

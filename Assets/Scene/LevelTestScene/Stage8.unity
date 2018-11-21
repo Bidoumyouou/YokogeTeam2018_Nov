@@ -2972,7 +2972,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4203317228813318, guid: 12835cb8f38d03f448eb1561a3df69df, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 23.06
       objectReference: {fileID: 0}
     - target: {fileID: 4203317228813318, guid: 12835cb8f38d03f448eb1561a3df69df, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3699,6 +3699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8eed2db98327f4d88e6e0c58be691d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ID: 0
 --- !u!212 &1429319492
 SpriteRenderer:
   m_ObjectHideFlags: 0
