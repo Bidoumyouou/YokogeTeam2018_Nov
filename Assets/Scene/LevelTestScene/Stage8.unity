@@ -3035,7 +3035,28 @@ Prefab:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 61112512433548740, guid: 12835cb8f38d03f448eb1561a3df69df,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 61112512433548740, guid: 12835cb8f38d03f448eb1561a3df69df,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 58314693082003596, guid: 12835cb8f38d03f448eb1561a3df69df,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 58314693082003596, guid: 12835cb8f38d03f448eb1561a3df69df,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 58702086924889164, guid: 12835cb8f38d03f448eb1561a3df69df, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 12835cb8f38d03f448eb1561a3df69df, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &886066186
@@ -3699,6 +3720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8eed2db98327f4d88e6e0c58be691d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ID: 0
 --- !u!212 &1429319492
 SpriteRenderer:
   m_ObjectHideFlags: 0
