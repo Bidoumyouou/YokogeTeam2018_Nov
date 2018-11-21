@@ -125,6 +125,8 @@ public class TestEnemy : Charactor
             Mode.index = _nextno;
             modeindex = _nextno;
             Mode.Mode_Start(this);
+            Mode.CallBack_Reciver = _callback;
+
         }
 
     }
@@ -164,9 +166,15 @@ public class TestEnemy : Charactor
         if (clash.Active)
         {
             //もし強靭度条件を満たしていたらDamegedに遷移
+            if (IsBoss && Invisible)
+            {
 
+            }
+            else
+            {
+                ChangeMode(1);
 
-            ChangeMode(1);
+            }
         }
         //状態の管理
         status.CheckAll();

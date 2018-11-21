@@ -5,7 +5,7 @@ public class Charactor : MonoBehaviour
 {
     public bool IsBuilding = false;//自分が建物か生物か
 
- 
+    public bool IsBoss = false;
 
     public AudioPlayer audioPlayer;
     [Tooltip("Animationでこの変数を弄る")]public int audio_index = -1;
@@ -199,6 +199,17 @@ public class Charactor : MonoBehaviour
                             //キャラクターは掴まれる
                             Grip = hitbox;
                             ChangeMode(6);
+                        }
+                    }
+                    else
+                    {
+                        //ボスならば反撃する
+                        if (IsBoss)
+                        {
+                            if (modetime > 1.0)
+                            {
+                                ChangeMode(7);
+                            }
                         }
                     }
                 }

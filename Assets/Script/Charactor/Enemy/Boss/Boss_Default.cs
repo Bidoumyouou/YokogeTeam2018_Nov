@@ -9,7 +9,7 @@ public class Boss_Default : E_ModeBase
     public override void Mode_Start(Charactor _obj)
     {
         _enemy = _obj.GetComponent<Boss>();
-
+        _enemy.Couter_Time = 0;
 
         player = GameObject.Find("TestPlayer");
         base.Mode_Start(_obj);
@@ -35,6 +35,15 @@ public class Boss_Default : E_ModeBase
         base.Mode_Update(_obj);
 
         _enemy.InRangeIlluminate();
+
+        _enemy.Attack2_Time += Time.deltaTime;
+
+        if(_enemy.Attack2_Time > _enemy.Attack2_Limit)
+        {
+            _obj.ChangeMode(4);
+            _enemy.Attack2_Time = 0;
+
+        }
 
 
     }
