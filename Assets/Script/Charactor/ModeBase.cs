@@ -17,6 +17,10 @@ public class AudioPlayTime
 
 public class ModeBase : ScriptableObject
 {
+
+    public float ModeChange_Random = 0;
+
+
     public List<AudioPlayTime> Audio_PlayTime;
 
     public Global.ClassWithGetter<Effect> Effect = new Global.ClassWithGetter<Effect>();
@@ -57,6 +61,8 @@ public class ModeBase : ScriptableObject
 
     public virtual void Mode_Start(Charactor _obj)
     {
+        ModeChange_Random = UnityEngine.Random.Range(0, 100);
+
         Array.Resize<ChangeMode_Adapter>(ref AllEqition, 0);
 
         //エフェクトのオブジェクトセット
