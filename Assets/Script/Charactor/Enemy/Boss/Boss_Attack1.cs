@@ -14,6 +14,23 @@ public class Boss_Attack1 : E_ModeBase
 
         player = GameObject.Find("TestPlayer");
         base.Mode_Start(_obj);
+
+        //前方に突っ込む
+        Rigidbody2D rb = _obj.GetComponent<Rigidbody2D>();
+
+        if (_enemy.player.transform.position.x > _enemy.transform.position.x)
+        {
+            //→
+            rb.AddForce(new Vector2(500, 0));
+            _obj.transform.localScale = new Vector3(2.5f, _obj.transform.localScale.y, _obj.transform.localScale.z);
+        }
+        else
+        {
+            rb.AddForce(new Vector2(-500, 0));
+            _obj.transform.localScale = new Vector3(-2.5f, _obj.transform.localScale.y, _obj.transform.localScale.z);
+
+        }
+
     }
 
     public override void Mode_Update(Charactor _obj)

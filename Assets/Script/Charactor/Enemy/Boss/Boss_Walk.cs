@@ -58,7 +58,7 @@ public class Boss_Walk : E_ModeBase
         }
 
         _enemy.InRangeIlluminate();
-        
+
         /*
         //プレイヤーとの距離が一定以下なら
         if (Vector3.Distance(_obj.transform.position, player.transform.position) < AttackRange)
@@ -66,7 +66,14 @@ public class Boss_Walk : E_ModeBase
             //_obj.ChangeMode(4);
         }
         */
-        
+        _enemy.Attack2_Time += Time.deltaTime;
+
+        if (_enemy.Attack2_Time > _enemy.Attack2_Limit)
+        {
+            _obj.ChangeMode(4);
+            _enemy.Attack2_Time = 0;
+        }
+
     }
 
     public override void MakeHitBox(Charactor _obj)

@@ -15,7 +15,7 @@ public class Boss_Assalt : E_ModeBase
         player = GameObject.Find("TestPlayer");
         base.Mode_Start(_obj);
 
-        MakeHitBox(_obj);
+        //MakeHitBox(_obj);
         //前方に突っ込む
         Rigidbody2D rb = _obj.GetComponent<Rigidbody2D>();
 
@@ -47,9 +47,13 @@ public class Boss_Assalt : E_ModeBase
 
     public override void MakeHitBox(Charactor _obj)
     {
-        _obj.hitbox[0] = GameObject.Instantiate(Attack[0], _obj.transform.position, Quaternion.identity) as GameObject;
-        _obj.hitbox[0].transform.parent = _obj.transform;
+        _obj.ChangeMode(7);
 
+        Vector3 v;
+        //オフセットと向きを考慮したposに当たり判定を生成
+        if (!_obj.IsRight) { v = new Vector3(attack_offset.x * -1, attack_offset.y, attack_offset.z); } else { v = attack_offset; }
+        _obj.hitbox[0] = GameObject.Instantiate(Attack[0], _obj.transform.position + v, Quaternion.identity) as GameObject;
+        _obj.hitbox[0].transform.parent = _obj.transform;
 
 
     }
