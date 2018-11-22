@@ -183,14 +183,6 @@ public class TestPlayer : Charactor {
 
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            audioPlayer.PlayBGM(0);
-        }
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            audioPlayer.PlayBGM(1);
-        }
 
 
 

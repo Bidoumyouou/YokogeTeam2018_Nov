@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StageMgr : MonoBehaviour {
+    public AudioPlayer audioPlayer;
+
     public string Scenename;//シーンの名前を取得する
     [Tooltip("落下したらアウトになるライン")]public float OutLine_Y;
     //GameObject Respawn_obj;
@@ -10,9 +12,24 @@ public class StageMgr : MonoBehaviour {
 
     void Start()
     {
+        audioPlayer = GameObject.Find("AudioList").GetComponent<AudioPlayer>();
+
         if (respawnPoint == null)
         {
             respawnPoint = GameObject.Find("RespawnPoint").GetComponent<RespawnPoint>();
+        }
+
+        if (Scenename == "Stage0")
+        {
+            audioPlayer.PlayBGM(0);
+
+        }else if(Scenename == "Stage8")
+        {
+            audioPlayer.PlayBGM(2);
+        }
+        else
+        {
+            audioPlayer.PlayBGM(1);
         }
     }
 	
