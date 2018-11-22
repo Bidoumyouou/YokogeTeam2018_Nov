@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e239663a6433c07458b91dd66ad06a93, type: 3}
   m_Name: E003_Attack
   m_EditorClassIdentifier: 
+  ModeChange_Random: 31
   Audio_PlayTime:
-  - time: 0.6
-    index: 2
+  - time: 0.7
+    index: 9
     Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
@@ -54,7 +55,7 @@ MonoBehaviour:
     EndTime: 100
     StartInputReceptionTime: 0.05
     EndInputReceptionTime: 0
-  CallBack_Reciver: -1
+  CallBack_Reciver: 0
   Strength: 1
   AttackRange: 2
   AttackTime: 0.7

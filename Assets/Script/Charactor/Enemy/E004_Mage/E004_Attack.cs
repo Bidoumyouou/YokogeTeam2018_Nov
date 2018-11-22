@@ -4,6 +4,8 @@
 //移動しないで攻撃のみを行う
 public class E004_Attack : E_ModeBase
 {
+
+
     [HideInInspector]public float AttackTimer = 0.0f;
     [Tooltip("攻撃を発生させる頻度")] public float AttackTime;
     public float dash_speed;
@@ -14,7 +16,6 @@ public class E004_Attack : E_ModeBase
     public Vector3 attack_offset;
     public override void Mode_Start(Charactor _obj)
     {
-        
         base.Mode_Start(_obj);
         //ひとつだけプレハブから攻撃オブジェクトを作成
         mage = _obj.GetComponent<Mage>();
@@ -105,6 +106,6 @@ public class E004_Attack : E_ModeBase
                 TrackShot(mage);
         }
         mage.IsAttacked = false;
-
+        _obj.audioPlayer.Play(13);
     }
 }

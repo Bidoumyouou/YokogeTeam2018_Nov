@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBuilding: 0
+  IsBoss: 0
   audioPlayer: {fileID: 0}
   audio_index: -1
   stage_manager: {fileID: 0}
@@ -175,7 +176,7 @@ MonoBehaviour:
     Alive: 1
     HP: 120
     MP: 0
-    level: 0
+    level: 1
   RayForHit: {x: 0, y: 0}
   gameobject_player: {fileID: 0}
   modetime: 0
@@ -208,6 +209,7 @@ MonoBehaviour:
   renderer: {fileID: 0}
   Grip: {fileID: 0}
   FirstMode: 3
+  First_Color: {r: 0, g: 0, b: 0, a: 0}
   tmp_velocity: 0
   isIllminate: 0
   MP: 3
@@ -219,7 +221,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bf6b2b843c6019241b80070d6ad9192c, type: 2}
   - {fileID: 11400000, guid: 5382257325160aa41803c8913c18fce3, type: 2}
   - {fileID: 11400000, guid: 2ba90a0cbb01e8048ae4268cbb61cb05, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 09e5cce89350800418591f259ca66a45, type: 2}
   - {fileID: 0}
   Modename: 
   EnemyUI: {fileID: 0}

@@ -187,7 +187,7 @@ public class Charactor : MonoBehaviour
                 if(col.tag == "PlayerAttack" && tag == E_Tag.Enemy)
                 {
                     E_ModeBase e_mode = (E_ModeBase)GetComponent<TestEnemy>().Mode;
-                   if(damege.Strength > e_mode.Strength)
+                   if(damege.Strength > e_mode.Strength + status.level)
                     {
                         //つかみかそうでないか
                         if (!hitbox.isGrip)
@@ -196,6 +196,7 @@ public class Charactor : MonoBehaviour
                             hitbox.IsHit = true;
 
                             //実際に吹っ飛ぶ
+                            audioPlayer.Play(4);
                             Clash(AdjustedDamegeVector, damege.power, damege.speed);
                         }
                         else

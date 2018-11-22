@@ -1564,6 +1564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdea15a82c7d283488ec7204f3dda38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 0}
   Scenename: Stage9
   OutLine_Y: -30
   respawnPoint: {fileID: 0}
@@ -7868,7 +7869,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4738888738544482, guid: 4b11fb9ba81fa0b4fb58e5b10bd5ea4b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 93.865906
+      value: 93.86591
       objectReference: {fileID: 0}
     - target: {fileID: 4738888738544482, guid: 4b11fb9ba81fa0b4fb58e5b10bd5ea4b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7908,6 +7909,23 @@ Prefab:
       propertyPath: CameraLockTrigger
       value: 
       objectReference: {fileID: 2107467005}
+    - target: {fileID: 114388465787327232, guid: 4b11fb9ba81fa0b4fb58e5b10bd5ea4b,
+        type: 2}
+      propertyPath: ModeList.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: a7d8928102223464f8e09142c874228e,
+        type: 2}
+    - target: {fileID: 114388465787327232, guid: 4b11fb9ba81fa0b4fb58e5b10bd5ea4b,
+        type: 2}
+      propertyPath: ModeList.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114388465787327232, guid: 4b11fb9ba81fa0b4fb58e5b10bd5ea4b,
+        type: 2}
+      propertyPath: ModeList.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 09e5cce89350800418591f259ca66a45,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b11fb9ba81fa0b4fb58e5b10bd5ea4b, type: 2}
   m_IsPrefabAsset: 0

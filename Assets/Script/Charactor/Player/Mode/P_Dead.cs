@@ -17,6 +17,7 @@ public class P_Dead : P_ModeBase
         //以上、全アクション共通
         ////////////////////////
         NextMode[0] = 1;
+        gameMgr.GameOver();
         gameMgr.MakeGameOverUI();
     }
     public override void Mode_Update(Charactor _obj)
@@ -29,8 +30,8 @@ public class P_Dead : P_ModeBase
         {
 
             //ゲームオーバー処理の呼び出し
-
-            gameMgr.GameOver();
+            _obj.audioPlayer.Play(12);
+            
             _obj.ChangeMode(0);
             //復活
         }

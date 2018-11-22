@@ -23,7 +23,7 @@ public class E005_Wait : E_ModeBase
             if (camera.valid)
             {
                 //デフォルトへ
-                _obj.ChangeMode(0);
+                _obj.ChangeMode(3);
             }
         }
     }

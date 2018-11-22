@@ -239,7 +239,7 @@ MonoBehaviour:
   Couter_Time: 0
   Attack2_Limit: 0
   IsCounter: 0
-  Counter_Apper_Time: 30
+  Counter_Apper_Time: 15
   Counter_Apper_Timer: 0
 --- !u!212 &212824273607316568
 SpriteRenderer:

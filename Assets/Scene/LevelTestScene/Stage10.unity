@@ -10319,7 +10319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdea15a82c7d283488ec7204f3dda38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scenename: Stage9
+  audioPlayer: {fileID: 0}
+  Scenename: Stage10
   OutLine_Y: -30
   respawnPoint: {fileID: 0}
 --- !u!4 &522035713

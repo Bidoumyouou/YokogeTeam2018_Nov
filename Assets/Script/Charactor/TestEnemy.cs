@@ -152,6 +152,10 @@ public class TestEnemy : Charactor
 
             }
         }
+        else
+        {
+            GameObject.Destroy(gameObject);
+        }
         //Modename = Mode.obj.name;
         IsRight = (transform.localScale.x > 0);
         ParentUpdate();

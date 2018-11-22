@@ -22,7 +22,7 @@ public class Status : System.Object {
     }
     public void Init()
     {
-        HP = 10;
+        HP = 100;
         MP = 50;
         Alive = true;
     }

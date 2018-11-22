@@ -11,8 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bf63ecd12f9564ebd3346089d6e9dd, type: 3}
   m_Name: Boss_Attack1
   m_EditorClassIdentifier: 
-  ModeChange_Random: 30
-  Audio_PlayTime: []
+  ModeChange_Random: 51
+  Audio_PlayTime:
+  - time: 0
+    index: 1
+    Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -54,8 +57,8 @@ MonoBehaviour:
     EndTime: 100
     StartInputReceptionTime: 0.05
     EndInputReceptionTime: 0
-  CallBack_Reciver: 0
-  Strength: 3
+  CallBack_Reciver: -1
+  Strength: 2
   AttackRange: 0
   p: 0
   attack_offset: {x: 1, y: 0, z: 0}

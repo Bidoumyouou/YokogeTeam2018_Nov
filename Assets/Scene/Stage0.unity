@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aade4b23c0df65e4ca225a3bfd864639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClearDoor: 0
   Number: 1
   TargetDoorNumber: 1
   scene: {fileID: 1365311709}
@@ -514,6 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aade4b23c0df65e4ca225a3bfd864639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClearDoor: 0
   Number: 1
   TargetDoorNumber: 1
   scene: {fileID: 0}
@@ -813,6 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aade4b23c0df65e4ca225a3bfd864639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClearDoor: 0
   Number: 4
   TargetDoorNumber: 1
   scene: {fileID: 1365311709}
@@ -957,7 +960,7 @@ Prefab:
     - target: {fileID: 114467032732675968, guid: e34a970b6e41336489c40a3ddd037121,
         type: 2}
       propertyPath: MP
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e34a970b6e41336489c40a3ddd037121, type: 2}
@@ -1066,6 +1069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aade4b23c0df65e4ca225a3bfd864639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClearDoor: 0
   Number: 2
   TargetDoorNumber: 1
   scene: {fileID: 1365311709}
@@ -1427,6 +1431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdea15a82c7d283488ec7204f3dda38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 0}
   Scenename: Stage0
   OutLine_Y: -30
   respawnPoint: {fileID: 0}
@@ -1807,6 +1812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aade4b23c0df65e4ca225a3bfd864639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClearDoor: 0
   Number: 3
   TargetDoorNumber: 1
   scene: {fileID: 1365311709}

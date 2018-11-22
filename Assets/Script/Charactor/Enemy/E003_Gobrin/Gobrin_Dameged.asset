@@ -11,10 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8eb657f4d0710c4eb141dca3aa52bf1, type: 3}
   m_Name: Gobrin_Dameged
   m_EditorClassIdentifier: 
-  Audio_PlayTime:
-  - time: 0.02
-    index: 4
-    Played: 1
+  ModeChange_Random: 2
+  Audio_PlayTime: []
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -57,5 +55,6 @@ MonoBehaviour:
   CallBack_Reciver: -1
   Strength: 0
   AttackRange: 0
+  call: 0
   ChangeToPre_index: 0
   StopTime: 0

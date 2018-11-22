@@ -10,8 +10,12 @@ public class StageMgr : MonoBehaviour {
     //GameObject Respawn_obj;
     public RespawnPoint respawnPoint;
 
+    public CameraControl camera;
+
     void Start()
     {
+        camera = GameObject.Find("Main Camera").GetComponent<CameraControl>();
+        camera.mode = 0;//トラックモードへ
         audioPlayer = GameObject.Find("AudioList").GetComponent<AudioPlayer>();
 
         if (respawnPoint == null)

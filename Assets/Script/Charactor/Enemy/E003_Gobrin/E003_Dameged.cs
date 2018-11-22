@@ -10,6 +10,8 @@ public class E003_Dameged : E_ModeBase
     //攻撃の出る場所
     public override void Mode_Start(Charactor _obj)
     {
+        
+
         base.Mode_Start(_obj);
     }
 

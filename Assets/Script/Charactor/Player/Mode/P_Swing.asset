@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986f4b4ff2afcbf40b9c410a9bcd165e, type: 3}
   m_Name: P_Swing
   m_EditorClassIdentifier: 
+  ModeChange_Random: 0
   Audio_PlayTime:
   - time: 0
     index: 0
@@ -99,5 +100,5 @@ MonoBehaviour:
   - MyLeft
   - MyHorizontal
   - MyVertical
-  MP: 10
+  MP: 20
   test: 0

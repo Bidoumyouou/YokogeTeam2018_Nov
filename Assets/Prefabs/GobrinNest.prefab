@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBuilding: 1
+  IsBoss: 0
   audioPlayer: {fileID: 0}
   audio_index: -1
   stage_manager: {fileID: 0}
@@ -144,6 +145,7 @@ MonoBehaviour:
   renderer: {fileID: 0}
   Grip: {fileID: 0}
   FirstMode: 4
+  First_Color: {r: 0, g: 0, b: 0, a: 0}
   tmp_velocity: 0
   isIllminate: 0
   MP: 3
@@ -155,7 +157,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a7d8928102223464f8e09142c874228e, type: 2}
   - {fileID: 11400000, guid: a748884ac91e5ed4596ebb151bca1e06, type: 2}
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 09e5cce89350800418591f259ca66a45, type: 2}
   - {fileID: 0}
   Modename: 
   EnemyUI: {fileID: 0}

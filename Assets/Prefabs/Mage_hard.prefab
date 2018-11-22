@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBuilding: 0
+  IsBoss: 0
   audioPlayer: {fileID: 0}
   audio_index: -1
   stage_manager: {fileID: 0}
@@ -146,7 +147,7 @@ MonoBehaviour:
     Alive: 1
     HP: 100
     MP: 0
-    level: 0
+    level: 1
   RayForHit: {x: 0, y: 0}
   gameobject_player: {fileID: 0}
   modetime: 0
@@ -179,6 +180,7 @@ MonoBehaviour:
   renderer: {fileID: 0}
   Grip: {fileID: 0}
   FirstMode: 3
+  First_Color: {r: 0, g: 0, b: 0, a: 0}
   tmp_velocity: 0
   isIllminate: 0
   MP: 3

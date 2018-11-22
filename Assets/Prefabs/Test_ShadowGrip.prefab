@@ -88,7 +88,7 @@ MonoBehaviour:
   Effect: {fileID: 0}
   type: 1
   Strength: 4
-  value: 40
+  value: 0
   power: 4
   vector: {x: -1, y: 0}
   speed: 4
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 333ac9cad8dd8e249ba48b194ccab076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioIndex: -1
   status:
     DeleteToHit: 0
     DeleteToChangeMode: 1

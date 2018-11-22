@@ -28,7 +28,7 @@ public class EnemyNest : TestEnemy
         }
         else
         {
-            ChangeMode(3);
+            ChangeMode(4);
         }
     }
 

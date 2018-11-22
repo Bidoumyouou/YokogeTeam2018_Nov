@@ -21,7 +21,7 @@ public class E001_Dead : E_ModeBase
             TestEnemy e = _obj.GetComponent<TestEnemy>();
 
             p.status.MP += e.MP;
-
+            _obj.audioPlayer.Play(14);
             _obj.Delete();
             
         }

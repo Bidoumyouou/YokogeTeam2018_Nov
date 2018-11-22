@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement; //シーン取り扱いのための行為
 public class Door : MonoBehaviour {
     public bool ClearDoor = false;
 
+    AudioPlayer audio;
+
     GameObject doormgr_obj;
     DoorMgr doormgr;
     private Transform NearPlayer_t;
@@ -22,6 +24,7 @@ public class Door : MonoBehaviour {
         //ヒエラルキーからFindでDoorMgrを探す
         doormgr_obj = GameObject.Find("DoorManager");
         doormgr = doormgr_obj.GetComponent<DoorMgr>();
+        audio = GameObject.Find("AudioList").GetComponent<AudioPlayer>();
     }
 	
 	// Update is called once per frame
@@ -32,7 +35,7 @@ public class Door : MonoBehaviour {
         {
             if(Vector2.Distance(transform.position,NearPlayer_t.position) <= 1.0f)
             {
-                if(Input.GetButtonDown("MyUp") || Input.GetAxis("MyHorizontal") < 0 )
+                if(Input.GetButtonDown("MyUp") || Input.GetAxis("MyHorizontal") < 0  || Input.GetButtonDown("MyZ"))
                 ChangeScene();
             }
         }
@@ -55,6 +58,7 @@ public class Door : MonoBehaviour {
         doormgr.DoorMoveflag = !DoorMoveflag;
         doormgr.TargetDoorNo = TargetDoorNumber;
         //マグロ
+        audio.Play(3);
         if (ClearDoor)
         {
             GameMgr g = GameObject.Find("G_MGR").GetComponent<GameMgr>();

@@ -3,13 +3,16 @@ using System.Collections;
 
 public class Boss_Attack2_MagicCircle : MonoBehaviour
 {
+    AudioPlayer audio;
+
     public GameObject DarkArm;
     bool isAttack = false;
     float timer = 0;
     // Use this for initialization
     void Start()
     {
-
+        audio = GameObject.Find("AudioList").GetComponent<AudioPlayer>();
+        audio.Play(3);
     }
 
     // Update is called once per frame
