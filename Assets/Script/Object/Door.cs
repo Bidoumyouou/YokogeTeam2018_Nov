@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement; //シーン取り扱いのための行為
 
 //コモンシーンに設置させるDoorMgrも参考にすること
 public class Door : MonoBehaviour {
+    public bool ClearDoor = false;
+
     GameObject doormgr_obj;
     DoorMgr doormgr;
     private Transform NearPlayer_t;
@@ -52,5 +54,11 @@ public class Door : MonoBehaviour {
 
         doormgr.DoorMoveflag = !DoorMoveflag;
         doormgr.TargetDoorNo = TargetDoorNumber;
+        //マグロ
+        if (ClearDoor)
+        {
+            GameMgr g = GameObject.Find("G_MGR").GetComponent<GameMgr>();
+            g.GameClear();
+        }
     }
 }

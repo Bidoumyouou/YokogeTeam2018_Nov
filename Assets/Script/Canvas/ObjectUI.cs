@@ -5,7 +5,7 @@ using UnityEngine.UI;
 //接近したら発生するようにする
 public class ObjectUI : MonoBehaviour
 {
-    [HideInInspector] public GameObject TargetObject;
+    public GameObject TargetObject;
     Charactor chara_cmp;
     private Transform targetTfm;
 
@@ -22,18 +22,10 @@ public class ObjectUI : MonoBehaviour
     private Text targetText;
     void Start()
     {
-        sl = GetComponentInChildren<Slider>();
-
         sprite = GetComponentsInChildren<Image>();
-        foreach (Image s in sprite)
-        {
-            s.color = new Color(1, 1, 1, 0);
-        }
         if (TargetObject != null)
         {
             targetTfm = TargetObject.transform;
-            chara_cmp = TargetObject.GetComponent<Charactor>();
-            startHP = chara_cmp.status.HP;
         }
         myRectTfm = GetComponent<RectTransform>();
         //targetText = GetComponent<Text>();
@@ -68,6 +60,5 @@ public class ObjectUI : MonoBehaviour
 
         //スライダーの更新
 
-        sl.value = (float)chara_cmp.status.HP / (float)startHP;
     }
 }

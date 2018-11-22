@@ -86,6 +86,15 @@ public class GameMgr : MonoBehaviour {
         ChangeScene("Stage0");
         player.status.Init();
     }
+    //ゲームクリアUI
+    public void GameClear()
+    {
+        GameObject g = Instantiate(GameClear_Prefab);
+        g.transform.parent = Canvas_Ref.transform;
+        g.transform.localPosition = new Vector3(0, 0, 0);
+
+    }
+
 
     public static void StageClear()
     {
