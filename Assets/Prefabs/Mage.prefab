@@ -144,7 +144,7 @@ MonoBehaviour:
   rigidbody2d: {fileID: 0}
   status:
     Alive: 1
-    HP: 100
+    HP: 50
     MP: 0
     level: 0
   RayForHit: {x: 0, y: 0}
@@ -180,6 +180,7 @@ MonoBehaviour:
   Grip: {fileID: 0}
   FirstMode: 3
   tmp_velocity: 0
+  isIllminate: 0
   MP: 3
   name: Mage
   ModeList:
