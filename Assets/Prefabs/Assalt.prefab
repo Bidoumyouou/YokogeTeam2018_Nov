@@ -89,7 +89,7 @@ MonoBehaviour:
   type: 1
   Strength: 2
   value: 20
-  power: 7
+  power: 1
   vector: {x: 1, y: 0.75}
   speed: 4
 --- !u!114 &114430427881892784
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1508234f9d1d17a409401e9d1de56bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioIndex: -1
   status:
     DeleteToHit: 0
     DeleteToChangeMode: 1

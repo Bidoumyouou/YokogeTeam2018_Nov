@@ -5,6 +5,9 @@ public class CameraLockTrigger : MonoBehaviour
 {
     public GameObject canvas;
 
+    public bool DeleteForEnemyDie = false;
+    [Tooltip("カメラを解除するのに必要な巣以外の敵")]public GameObject[] TargetObjectForDelete;
+
     [HideInInspector]public bool valid = false;
     public  Transform CameraPoint;
     // Use this for initialization
@@ -21,7 +24,27 @@ public class CameraLockTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //これに紐づけた敵が全部死んだら解除する
+        int i = 0;
+        if (DeleteForEnemyDie)
+        {
+            foreach(GameObject g in TargetObjectForDelete)
+            {
+                if(g == null)
+                {
+                    i++;
+                }
+            
+            }
+            if(i >= TargetObjectForDelete.Length)
+            {
+                EndCameraLock();
+                GameObject.Destroy(this.gameObject);
 
+            }
+
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

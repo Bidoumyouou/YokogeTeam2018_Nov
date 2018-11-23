@@ -1568,6 +1568,7 @@ MonoBehaviour:
   Scenename: Stage9
   OutLine_Y: -30
   respawnPoint: {fileID: 0}
+  camera: {fileID: 0}
 --- !u!4 &522035713
 Transform:
   m_ObjectHideFlags: 0
@@ -10473,6 +10474,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114215946118911762, guid: 62c2bc234d2ae1a43befab4add1a020c,
+        type: 2}
+      propertyPath: TargetObjectForDelete.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4296617021292282, guid: 62c2bc234d2ae1a43befab4add1a020c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 89.7
@@ -10508,6 +10514,11 @@ Prefab:
     - target: {fileID: 61858235025542594, guid: 62c2bc234d2ae1a43befab4add1a020c,
         type: 2}
       propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215946118911762, guid: 62c2bc234d2ae1a43befab4add1a020c,
+        type: 2}
+      propertyPath: DeleteForEnemyDie
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

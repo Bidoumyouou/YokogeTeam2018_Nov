@@ -110,7 +110,7 @@ MonoBehaviour:
   rigidbody2d: {fileID: 0}
   status:
     Alive: 1
-    HP: 300
+    HP: 120
     MP: 0
     level: 0
   RayForHit: {x: 0, y: 0}

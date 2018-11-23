@@ -28,7 +28,13 @@ public class Boss : TestEnemy
 // Use this for initialization
 void Start()
     {
-        Attack2_Limit = Random.Range(5,15);
+        //生成時にカメラロックを探して自分を除去対象に入れる
+
+        CameraLockTrigger locktrigger = GameObject.Find("CameraLockTrigger").GetComponent<CameraLockTrigger>();
+        locktrigger.TargetObjectForDelete[0] = this.gameObject;
+        locktrigger.DeleteForEnemyDie = true;
+
+        Attack2_Limit = Random.Range(5,10);
 
         CameraPrefab = GameObject.Find("Main Camera");
         player = GameObject.Find("TestPlayer").GetComponent<TestPlayer>();
@@ -130,7 +136,7 @@ void Start()
     {
         transform.position = tr.position;
         transform.Translate(0, 1, 0);
-        renderer.color = tmp_color;
+        renderer.color = First_Color;
         transform.localScale = new Vector3(2.5f, 2.5f, 1);
         ChangeMode(8);
     }

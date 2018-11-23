@@ -6,7 +6,7 @@ public class Boss_Dameged : E_ModeBase
     public int call = 0;
     public bool ChangeToPre_index = true;
 
-    public float Counter_Limit = 3.0f;
+    public float Counter_Limit = 2.0f;
 
     Boss _boss;
     public float StopTime;//やられ硬直時間
