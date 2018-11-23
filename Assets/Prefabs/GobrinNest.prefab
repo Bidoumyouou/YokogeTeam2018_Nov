@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114689408285806054}
   - component: {fileID: 212075896749573156}
   - component: {fileID: 114388465787327232}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: GobrinNest
   m_TagString: Enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}

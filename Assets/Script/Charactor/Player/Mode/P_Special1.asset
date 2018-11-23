@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,6 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550059d7361f2f14297958ab4845174f, type: 3}
   m_Name: P_Special1
   m_EditorClassIdentifier: 
+  ModeChange_Random: 0
+  Audio_PlayTime: []
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -40,5 +42,5 @@ MonoBehaviour:
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
   targetkeylist: []
-  MP: 10
+  MP: 20
   test: 0
