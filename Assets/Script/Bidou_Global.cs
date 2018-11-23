@@ -5,9 +5,13 @@ using System.Collections.Generic;
 namespace BidouLib
 {
 
+    //public const float Key_Dead = 0.2f;
+
 
     public static class Global
     {
+
+
         //bool型を1or-1に変換する
         public static int BoolToSign(bool _b)
         {

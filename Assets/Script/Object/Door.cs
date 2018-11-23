@@ -35,7 +35,7 @@ public class Door : MonoBehaviour {
         {
             if(Vector2.Distance(transform.position,NearPlayer_t.position) <= 1.0f)
             {
-                if(Input.GetButtonDown("MyUp") || Input.GetAxis("MyHorizontal") < 0  || Input.GetButtonDown("MyZ"))
+                if(Input.GetButtonDown("MyZ"))
                 ChangeScene();
             }
         }

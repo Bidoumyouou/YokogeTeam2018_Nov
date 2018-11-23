@@ -10323,6 +10323,7 @@ MonoBehaviour:
   Scenename: Stage10
   OutLine_Y: -30
   respawnPoint: {fileID: 0}
+  camera: {fileID: 0}
 --- !u!4 &522035713
 Transform:
   m_ObjectHideFlags: 0
@@ -14240,11 +14241,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4832116371392664, guid: b79aeb098bcc5554a92b05913dc9e007, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.63
+      value: 5.59
       objectReference: {fileID: 0}
     - target: {fileID: 4832116371392664, guid: b79aeb098bcc5554a92b05913dc9e007, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -19.04
+      value: -20.82
       objectReference: {fileID: 0}
     - target: {fileID: 4832116371392664, guid: b79aeb098bcc5554a92b05913dc9e007, type: 2}
       propertyPath: m_LocalPosition.z
