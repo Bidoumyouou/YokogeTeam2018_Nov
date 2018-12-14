@@ -25,6 +25,7 @@ https://youtu.be/RJb2VwwjWSI
 Credit
 /////////////////////////////
 
+
 ゲームデザイン:Build,くま吉
 プログラム: Build
 グラフィック:くま吉
