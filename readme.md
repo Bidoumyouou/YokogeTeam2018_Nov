@@ -21,3 +21,23 @@ Unityエディタ上から敵、味方のアクションを制御できるステ
 プレイ動画↓
 https://youtu.be/RJb2VwwjWSI
 
+/////////////////////////////
+Credit
+/////////////////////////////
+
+ゲームデザイン:Build,くま吉
+プログラム: Build
+グラフィック:くま吉
+
+Unity Asset Store
+UI pack　www.kenney.nl
+2D Dev Sprites https://rylabs.wordpress.com/
+
+BGM
+フリー音楽素材 H/MIX GALLERY
+http://www.hmix.net/
+SE
+魔王魂　https://maoudamashii.jokersounds.com/
+ポケットサウンド　https://pocket-se.info/
+ザ・マッチメイカアズ　http://osabisi.sakura.ne.jp/m2/
+
