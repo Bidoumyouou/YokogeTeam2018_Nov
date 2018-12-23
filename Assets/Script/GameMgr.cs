@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 //10/25 シーンのロード管理の機能も付与
 public class GameMgr : MonoBehaviour {
 
+    bool IsPause = false;
+
+    public GameObject PausePrefab;
     public GameObject GameOver_Prefab;
     public GameObject GameClear_Prefab;
 
@@ -21,6 +24,7 @@ public class GameMgr : MonoBehaviour {
     GameObject stageMgr_obj;
     StageMgr stageMgr_cmp;
 
+    GameObject pause_obj;
     public GameObject Canvas_Ref;
 
     public AudioPlayer audioplayer;
@@ -54,6 +58,17 @@ public class GameMgr : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (IsPause)
+        {
+            Time.timeScale = 0;
+            //ポーズ中のなにか
+
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+
         //StageMgrのStartよりも後に呼ばれるらしい？のでこのばしょでステージmgrをくっつける
         if (Scene_Reloded)
         {
@@ -69,7 +84,28 @@ public class GameMgr : MonoBehaviour {
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(NowSceneName));
         }
 
+        //ポーズによる遷移
+        if (Input.GetButtonDown("Cancel"))
+        {
+                PauseStart();
+                
+        }
+    }
 
+    public void PauseStart()
+    {
+        if (!IsPause)
+        {
+            IsPause = true;
+            pause_obj = Instantiate(PausePrefab);
+            pause_obj.transform.position = Canvas_Ref.transform.position;
+            pause_obj.transform.parent = Canvas_Ref.transform;
+        }
+        else
+        {
+            IsPause = false;
+            Destroy(pause_obj.gameObject);
+        }
     }
 
     public void MakeGameOverUI()
