@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 //10/25 シーンのロード管理の機能も付与
 public class GameMgr : MonoBehaviour {
 
-    bool IsPause = false;
+    public bool IsPause = false;
 
     public GameObject PausePrefab;
     public GameObject GameOver_Prefab;
@@ -91,6 +91,12 @@ public class GameMgr : MonoBehaviour {
                 
         }
     }
+    public void EndPose()
+    {
+        IsPause = false;
+        Destroy(pause_obj.gameObject);
+
+    }
 
     public void PauseStart()
     {
@@ -98,13 +104,11 @@ public class GameMgr : MonoBehaviour {
         {
             IsPause = true;
             pause_obj = Instantiate(PausePrefab);
-            pause_obj.transform.position = Canvas_Ref.transform.position;
+            pause_obj.transform.localPosition = Canvas_Ref.transform.position;
             pause_obj.transform.parent = Canvas_Ref.transform;
         }
         else
         {
-            IsPause = false;
-            Destroy(pause_obj.gameObject);
         }
     }
 

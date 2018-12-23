@@ -55,8 +55,6 @@ GameObject:
   - component: {fileID: 224978506914071422}
   - component: {fileID: 222569348158018024}
   - component: {fileID: 114666197588480434}
-  - component: {fileID: 111706183881934230}
-  - component: {fileID: 95615887072932308}
   m_Layer: 5
   m_Name: Yes
   m_TagString: Untagged
@@ -74,8 +72,6 @@ GameObject:
   - component: {fileID: 224058001415449516}
   - component: {fileID: 222409561653691128}
   - component: {fileID: 114154230796661200}
-  - component: {fileID: 111813564398165622}
-  - component: {fileID: 95732307430688982}
   m_Layer: 5
   m_Name: No
   m_TagString: Untagged
@@ -108,6 +104,7 @@ GameObject:
   - component: {fileID: 224652952483505096}
   - component: {fileID: 222591873344807698}
   - component: {fileID: 114120920529150880}
+  - component: {fileID: 114158764394125694}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -132,72 +129,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &95615887072932308
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1778448303769486}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fcc9062787dba45469848032abf7b351, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!95 &95732307430688982
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1805609756089504}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fcc9062787dba45469848032abf7b351, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &111706183881934230
-Animation:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1778448303769486}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: bad2628b47a3dd5478945865bbaee404, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 080690c5ade9ba446bcfd853e8355d67, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!111 &111813564398165622
-Animation:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1805609756089504}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: bad2628b47a3dd5478945865bbaee404, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 080690c5ade9ba446bcfd853e8355d67, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114054654138138842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -285,6 +216,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114158764394125694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1966036911905672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b02af86028a6dc41a6a6b8cf99e7bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameMgr: {fileID: 0}
 --- !u!114 &114167342516505100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -522,7 +465,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1911133137113200}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
