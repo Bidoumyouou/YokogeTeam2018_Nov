@@ -136,6 +136,10 @@ public class TestEnemy : Charactor
     // Update is called once per frame
     protected void Update()
     {
+        //ポーズモードなら呼び出さない
+        if (Time.timeScale == 0)
+            return;
+
         //ダメージ受けてたらマスク(赤)
         if (Mode != null)
         {
