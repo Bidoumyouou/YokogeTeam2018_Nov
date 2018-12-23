@@ -159,6 +159,10 @@ public class TestPlayer : Charactor {
     }
     
     void Update () {
+        //ポーズモードなら呼び出さない
+        if (Time.timeScale == 0)
+            return;
+
         //ランモード以外の時RunSpeedを徐々に落とす
         if(Mode.index != 6)
         {
