@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CameraLockTrigger : MonoBehaviour
 {
+
+
     public GameObject canvas;
 
     public bool DeleteForEnemyDie = false;
